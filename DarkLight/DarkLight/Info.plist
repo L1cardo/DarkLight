@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>SUFeedURL</key>
-	<string></string>
+	<string>https://github.com/L1cardo/DarkLight-APPcast/raw/master/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>w9/p1nbbkDjO3Ut5bGhkvGf1DPG6tLARalM9M8BSnqA=</string>
 	<key>CFBundleDevelopmentRegion</key>
