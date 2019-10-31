@@ -32,6 +32,9 @@
 /* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "Roe-Ta-HIR"; */
 "Roe-Ta-HIR.title" = "版本号";
 
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Tn4-zH-f5L"; */
+"Tn4-zH-f5L.title" = "检查更新...";
+
 /* Class = "NSWindow"; title = "Preferences"; ObjectID = "V4J-aa-bke"; */
 "V4J-aa-bke.title" = "偏好设置";
 

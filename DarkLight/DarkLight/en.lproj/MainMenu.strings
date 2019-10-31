@@ -26,11 +26,14 @@
 /* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "MAO-FQ-0UT"; */
 "MAO-FQ-0UT.title" = "✉️ Email:";
 
-/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "QC7-fx-ayi"; */
-"QC7-fx-ayi.title" = "Label";
+/* Class = "NSTextFieldCell"; title = "Switch between Dark and Light mode with keyboard"; ObjectID = "QC7-fx-ayi"; */
+"QC7-fx-ayi.title" = "Switch between Dark and Light mode with keyboard";
 
 /* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "Roe-Ta-HIR"; */
 "Roe-Ta-HIR.title" = "versionNum";
+
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Tn4-zH-f5L"; */
+"Tn4-zH-f5L.title" = "Check for Updates...";
 
 /* Class = "NSWindow"; title = "Preferences"; ObjectID = "V4J-aa-bke"; */
 "V4J-aa-bke.title" = "Preferences";

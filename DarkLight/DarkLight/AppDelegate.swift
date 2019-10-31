@@ -72,12 +72,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         guard let button = statusBarMenuItem.button else { return }
         let x = button.frame.origin.x
         let y = button.frame.origin.y - 5
+        let w = button.window
         let location = button.superview!.convert(NSMakePoint(x, y), to: nil)
         let event = NSEvent.mouseEvent(with: .leftMouseUp,
                                        location: location,
                                        modifierFlags: NSEvent.ModifierFlags(rawValue: 0),
                                        timestamp: 0,
-                                       windowNumber: button.window!.windowNumber,
+                                       windowNumber: w!.windowNumber,
                                        context: NSGraphicsContext.init(),
                                        eventNumber: 0,
                                        clickCount: 1,
