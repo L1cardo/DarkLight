@@ -28,7 +28,7 @@
             <items>
                 <menuItem title="Preferences..." keyEquivalent="," id="a8e-Ce-5py">
                     <connections>
-                        <action selector="deminiaturize:" target="V4J-aa-bke" id="46L-qi-zIk"/>
+                        <action selector="deminiaturize:" target="V4J-aa-bke" id="PAR-Fo-tZs"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="4HY-6K-YhU"/>
@@ -41,13 +41,13 @@
                 <menuItem title="About DarkLight" id="KrJ-h0-BEQ">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="deminiaturize:" target="9do-6G-TU2" id="q69-z1-r0L"/>
+                        <action selector="deminiaturize:" target="9do-6G-TU2" id="uhC-b9-qaJ"/>
                     </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="8uU-Au-b6y"/>
                 <menuItem title="Quit DarkLight" keyEquivalent="q" id="ZZT-0w-5ZS">
                     <connections>
-                        <action selector="quitDarkLight:" target="Voe-Tx-rLC" id="9ns-hW-0G3"/>
+                        <action selector="statusBarQuitButton:" target="Voe-Tx-rLC" id="9He-I0-ST6"/>
                     </connections>
                 </menuItem>
             </items>
@@ -55,14 +55,15 @@
         </menu>
         <window title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="9do-6G-TU2">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="703" y="541" width="320" height="350"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES"/>
+            <rect key="contentRect" x="796" y="550" width="320" height="350"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="cqj-L3-82Y">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gWe-2p-aYe">
-                        <rect key="frame" x="126" y="282" width="68" height="68"/>
+                        <rect key="frame" x="123" y="282" width="68" height="68"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="68" id="HPE-y9-oGe"/>
                             <constraint firstAttribute="width" constant="68" id="bkq-d6-aAS"/>
@@ -83,7 +84,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tlm-z7-vA1">
                                 <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="VAy-bv-4bN">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -91,7 +92,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nzO-x3-PVT">
                                 <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="8zw-Z0-Rci">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -328,7 +329,7 @@
                     <constraint firstItem="XD3-PE-iJ4" firstAttribute="top" secondItem="oNc-ya-VDY" secondAttribute="bottom" constant="8" symbolic="YES" id="THe-yG-HV0"/>
                     <constraint firstItem="XD3-PE-iJ4" firstAttribute="centerX" secondItem="cqj-L3-82Y" secondAttribute="centerX" id="VB2-3l-jcC"/>
                     <constraint firstItem="HlI-gD-D7S" firstAttribute="centerX" secondItem="cqj-L3-82Y" secondAttribute="centerX" id="gDP-9F-jzi"/>
-                    <constraint firstItem="gWe-2p-aYe" firstAttribute="centerX" secondItem="cqj-L3-82Y" secondAttribute="centerX" id="no5-gW-xOf"/>
+                    <constraint firstItem="gWe-2p-aYe" firstAttribute="centerX" secondItem="cqj-L3-82Y" secondAttribute="centerX" constant="-3" id="no5-gW-xOf"/>
                     <constraint firstAttribute="bottom" secondItem="HlI-gD-D7S" secondAttribute="bottom" constant="20" id="xLs-vm-nR7"/>
                     <constraint firstItem="oNc-ya-VDY" firstAttribute="top" secondItem="gWe-2p-aYe" secondAttribute="bottom" constant="8" symbolic="YES" id="zwz-Kq-ATW"/>
                 </constraints>
@@ -337,14 +338,15 @@
         </window>
         <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="V4J-aa-bke">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="703" y="541" width="320" height="350"/>
+            <windowPositionMask key="initialPositionMask" topStrut="YES"/>
+            <rect key="contentRect" x="703" y="550" width="320" height="350"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="gpD-XC-WGt">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-uF-dLw">
-                        <rect key="frame" x="126" y="282" width="68" height="68"/>
+                        <rect key="frame" x="123" y="282" width="68" height="68"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="68" id="ccn-9b-vRX"/>
                             <constraint firstAttribute="width" constant="68" id="qdf-Si-XMf"/>
@@ -365,7 +367,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-dA-z4g">
                                 <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="G6L-zH-zGE">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -373,7 +375,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5ea-aP-7XQ">
                                 <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="Roe-Ta-HIR">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -412,7 +414,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-2D-5l0">
                                 <rect key="frame" x="16" y="53" width="229" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="DarkLight will launch at login automatically" id="szz-PM-bI6">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -447,15 +449,17 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-pM-ZPE">
                                 <rect key="frame" x="16" y="0.0" width="277" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Switch between Dark and Light mode with keyboard" id="QC7-fx-ayi">
-                                    <font key="font" metaFont="message" size="11"/>
+                                    <font key="font" metaFont="controlContent" size="11"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="zkA-NH-6Mf" firstAttribute="leading" secondItem="PmI-p3-r6W" secondAttribute="leading" id="3MT-0T-NPA"/>
                             <constraint firstItem="7xU-pM-ZPE" firstAttribute="leading" secondItem="PmI-p3-r6W" secondAttribute="leading" constant="18" id="87X-Sk-hVB"/>
                             <constraint firstItem="QyM-2D-5l0" firstAttribute="leading" secondItem="PmI-p3-r6W" secondAttribute="leading" constant="18" id="cZL-o2-ron"/>
+                            <constraint firstItem="bBx-eh-ABO" firstAttribute="leading" secondItem="PmI-p3-r6W" secondAttribute="leading" id="hpF-e5-eDD"/>
                         </constraints>
                         <visibilityPriorities>
                             <integer value="1000"/>
@@ -470,18 +474,30 @@
                             <real value="3.4028234663852886e+38"/>
                         </customSpacing>
                     </stackView>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-nz-dJn">
+                        <rect key="frame" x="127" y="37" width="66" height="32"/>
+                        <buttonCell key="cell" type="push" title="Quit" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="zLH-AG-NH4">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="preferencesPanelQuitButton:" target="Voe-Tx-rLC" id="T17-WJ-63D"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="v4P-Qx-EC2" secondAttribute="bottom" constant="20" id="3Fq-Q9-697"/>
                     <constraint firstItem="dpQ-BJ-iHu" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="Gwg-lZ-2Nc"/>
                     <constraint firstItem="PmI-p3-r6W" firstAttribute="top" secondItem="PbZ-Tn-Pn0" secondAttribute="bottom" constant="8" id="HDH-69-h1d"/>
+                    <constraint firstItem="jFd-nz-dJn" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="TDh-J7-hmc"/>
                     <constraint firstItem="v4P-Qx-EC2" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="TEp-P5-Rrf"/>
                     <constraint firstItem="PmI-p3-r6W" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="U0J-mu-y8k"/>
                     <constraint firstItem="dpQ-BJ-iHu" firstAttribute="top" secondItem="b4o-uF-dLw" secondAttribute="bottom" constant="8" symbolic="YES" id="cbR-HJ-eW3"/>
                     <constraint firstItem="PbZ-Tn-Pn0" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="ezK-9s-ipN"/>
-                    <constraint firstItem="b4o-uF-dLw" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" id="hhy-4L-ZZn"/>
+                    <constraint firstItem="b4o-uF-dLw" firstAttribute="centerX" secondItem="gpD-XC-WGt" secondAttribute="centerX" constant="-3" id="hhy-4L-ZZn"/>
                     <constraint firstItem="b4o-uF-dLw" firstAttribute="top" secondItem="gpD-XC-WGt" secondAttribute="top" id="sdC-58-Myo"/>
                     <constraint firstItem="PbZ-Tn-Pn0" firstAttribute="top" secondItem="dpQ-BJ-iHu" secondAttribute="bottom" constant="8" symbolic="YES" id="tV6-kX-hEY"/>
+                    <constraint firstItem="v4P-Qx-EC2" firstAttribute="top" secondItem="jFd-nz-dJn" secondAttribute="bottom" constant="8" id="tg0-xn-EXK"/>
                 </constraints>
             </view>
             <point key="canvasLocation" x="104" y="121"/>

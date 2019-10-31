@@ -33,6 +33,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         darkLightShortcut.associatedUserDefaultsKey = "darkLightSwith"
         
+        launchAtLoginCheckbox.state = LaunchAtLogin.isEnabled ? .on : .off
+        
         bindShortcut()
         
         if let button = statusBarMenuItem.button {
@@ -56,8 +58,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    // quit button
-    @IBAction func quitDarkLight(_ sender: NSMenuItem) {
+    // status bar quit button
+    @IBAction func statusBarQuitButton(_ sender: NSMenuItem) {
+        NSApp.terminate(self)
+    }
+    
+    // preferences panel quit button
+    @IBAction func preferencesPanelQuitButton(_ sender: NSButton) {
         NSApp.terminate(self)
     }
     

@@ -88,3 +88,6 @@
 
 /* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "z3X-3W-3n7"; */
 "z3X-3W-3n7.title" = "💻 GitHub:";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "zLH-AG-NH4"; */
+"zLH-AG-NH4.title" = "Quit";
