@@ -1,0 +1,87 @@
+
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "2i3-l6-7uT"; */
+"2i3-l6-7uT.title" = "WeChat";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "8zw-Z0-Rci"; */
+"8zw-Z0-Rci.title" = "versionNum";
+
+/* Class = "NSWindow"; title = "About"; ObjectID = "9do-6G-TU2"; */
+"9do-6G-TU2.title" = "About";
+
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "CQb-o5-7aZ"; */
+"CQb-o5-7aZ.title" = "https://licardo.cn";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "G6L-zH-zGE"; */
+"G6L-zH-zGE.title" = "Version:";
+
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "Idp-na-3RQ"; */
+"Idp-na-3RQ.title" = "🐦 Twitter:";
+
+/* Class = "NSMenuItem"; title = "About DarkLight"; ObjectID = "KrJ-h0-BEQ"; */
+"KrJ-h0-BEQ.title" = "About DarkLight";
+
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "LgT-UK-Fyw"; */
+"LgT-UK-Fyw.title" = "💸 Donate:";
+
+/* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "MAO-FQ-0UT"; */
+"MAO-FQ-0UT.title" = "✉️ Email:";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "QC7-fx-ayi"; */
+"QC7-fx-ayi.title" = "Label";
+
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "Roe-Ta-HIR"; */
+"Roe-Ta-HIR.title" = "versionNum";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "V4J-aa-bke"; */
+"V4J-aa-bke.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "VAy-bv-4bN"; */
+"VAy-bv-4bN.title" = "Version:";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "Xjg-QV-Bsa"; */
+"Xjg-QV-Bsa.title" = "Launch At Login";
+
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "Ync-1o-RYs"; */
+"Ync-1o-RYs.title" = "https://github.com/L1cardo";
+
+/* Class = "NSMenuItem"; title = "Quit DarkLight"; ObjectID = "ZZT-0w-5ZS"; */
+"ZZT-0w-5ZS.title" = "Quit DarkLight";
+
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "a3Q-GB-60P"; */
+"a3Q-GB-60P.title" = "Alipay";
+
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "a8e-Ce-5py"; */
+"a8e-Ce-5py.title" = "Preferences...";
+
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "e1c-Ab-vbe"; */
+"e1c-Ab-vbe.title" = "💡 HomePage:";
+
+/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "heH-9K-snB"; */
+"heH-9K-snB.title" = "DarkLight";
+
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "hfv-is-4u2"; */
+"hfv-is-4u2.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "iNF-rP-1n8"; */
+"iNF-rP-1n8.title" = "Copyright © 2019 Licardo. All rights reserved.";
+
+/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "jB4-FX-y0L"; */
+"jB4-FX-y0L.title" = "Shortcut:";
+
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "ozZ-Qe-bBg"; */
+"ozZ-Qe-bBg.title" = "Copyright © 2019 Licardo. All rights reserved.";
+
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "pa4-Kc-L6h"; */
+"pa4-Kc-L6h.title" = "Paypal";
+
+/* Class = "NSTextFieldCell"; title = "DarkLight will launch at login automatically"; ObjectID = "szz-PM-bI6"; */
+"szz-PM-bI6.title" = "DarkLight will launch at login automatically";
+
+/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "xe4-7X-4t7"; */
+"xe4-7X-4t7.title" = "DarkLight";
+
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "yFG-bQ-hCU"; */
+"yFG-bQ-hCU.title" = "@AlbertAbdilim";
+
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "z3X-3W-3n7"; */
+"z3X-3W-3n7.title" = "💻 GitHub:";
