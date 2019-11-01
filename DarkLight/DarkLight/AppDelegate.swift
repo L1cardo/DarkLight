@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import LaunchAtLogin
+import LoginServiceKit
 import MASShortcut
 
 @NSApplicationMain
@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         darkLightShortcut.associatedUserDefaultsKey = "darkLightSwith"
         
-        launchAtLoginCheckbox.state = LaunchAtLogin.isEnabled ? .on : .off
+        launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
         
         bindShortcut()
         
@@ -64,12 +64,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // status bar preferences button
     @IBAction func statusBarPreferencesButton(_ sender: NSMenuItem) {
         NSApp.activate(ignoringOtherApps: true)
+        aboutWindow.close()
         preferencesWindow.makeKeyAndOrderFront(sender)
     }
     
     // status bar about button
     @IBAction func statusBarAboutButton(_ sender: NSMenuItem) {
         NSApp.activate(ignoringOtherApps: true)
+        preferencesWindow.close()
         aboutWindow.makeKeyAndOrderFront(sender)
     }
     
@@ -103,7 +105,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // launch at login checkbox
     @IBAction func launchAtLoginChecked(_ sender: NSButton) {
         let isChecked = launchAtLoginCheckbox.state == .on
-        LaunchAtLogin.isEnabled = isChecked ? true : false
+        if isChecked == true {
+            LoginServiceKit.addLoginItems()
+        } else {
+            LoginServiceKit.removeLoginItems()
+        }
     }
     
     // display status menu

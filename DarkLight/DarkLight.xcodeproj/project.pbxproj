@@ -7,33 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		963D267B236B0B6300C939D5 /* LaunchAtLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */; };
-		963D267C236B0B6300C939D5 /* LaunchAtLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9668968C2369D2AB009DDB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668968B2369D2AB009DDB4E /* AppDelegate.swift */; };
 		9668968E2369D2AB009DDB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9668968D2369D2AB009DDB4E /* Assets.xcassets */; };
 		966896912369D2AB009DDB4E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9668968F2369D2AB009DDB4E /* MainMenu.xib */; };
 		FEF7048F971EBE031E81FDEB /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5493B1AC706F6FBB8AA7D5 /* Pods_DarkLight.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		963D267D236B0B6300C939D5 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				963D267C236B0B6300C939D5 /* LaunchAtLogin.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		410107EC7D4FBF973F572B70 /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
 		5745033F636D69E177C93069 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
 		963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
-		964D9809236BE8B10059236F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		964D980F236BED710059236F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		966896882369D2AB009DDB4E /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668968B2369D2AB009DDB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9668968D2369D2AB009DDB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963D267B236B0B6300C939D5 /* LaunchAtLogin.framework in Frameworks */,
 				FEF7048F971EBE031E81FDEB /* Pods_DarkLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,8 +100,6 @@
 				966896852369D2AB009DDB4E /* Frameworks */,
 				966896862369D2AB009DDB4E /* Resources */,
 				32D59A26CB703DE39BABAD58 /* [CP] Embed Pods Frameworks */,
-				963D267D236B0B6300C939D5 /* Embed Frameworks */,
-				963D267E236B0BA700C939D5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,23 +174,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		963D267E236B0BA700C939D5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/Carthage/Build/Mac/LaunchAtLogin.framework/Resources/copy-helper.sh\"\n";
-		};
 		E1A640AB92F41248C2264351 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,7 +215,7 @@
 			children = (
 				966896902369D2AB009DDB4E /* Base */,
 				96C30732236AEAB60006C909 /* zh-Hans */,
-				964D9809236BE8B10059236F /* en */,
+				964D980F236BED710059236F /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -383,13 +347,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191031;
+				CURRENT_PROJECT_VERSION = 20191101;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DarkLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,13 +372,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191031;
+				CURRENT_PROJECT_VERSION = 20191101;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DarkLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

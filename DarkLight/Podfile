@@ -9,5 +9,6 @@ target 'DarkLight' do
     
     pod 'MASShortcut'
     pod 'Sparkle'
+    pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
 
 end

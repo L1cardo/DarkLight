@@ -5,8 +5,14 @@
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "2kZ-co-A1t"; */
 "2kZ-co-A1t.title" = "Cancel";
 
+/* Class = "NSButton"; ibShadowedToolTip = "Close Preferences"; ObjectID = "6dW-F2-RTt"; */
+"6dW-F2-RTt.ibShadowedToolTip" = "Close Preferences";
+
 /* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "8zw-Z0-Rci"; */
 "8zw-Z0-Rci.title" = "versionNum";
+
+/* Class = "NSWindow"; title = "About"; ObjectID = "9do-6G-TU2"; */
+"9do-6G-TU2.title" = "About";
 
 /* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "CQb-o5-7aZ"; */
 "CQb-o5-7aZ.title" = "https://licardo.cn";
@@ -40,6 +46,9 @@
 
 /* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Tn4-zH-f5L"; */
 "Tn4-zH-f5L.title" = "Check for Updates...";
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "V4J-aa-bke"; */
+"V4J-aa-bke.title" = "Preferences";
 
 /* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "VAy-bv-4bN"; */
 "VAy-bv-4bN.title" = "Version:";
@@ -76,6 +85,12 @@
 
 /* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "jB4-FX-y0L"; */
 "jB4-FX-y0L.title" = "Shortcut:";
+
+/* Class = "NSButton"; ibShadowedToolTip = "Quit DarkLight"; ObjectID = "jFd-nz-dJn"; */
+"jFd-nz-dJn.ibShadowedToolTip" = "Quit DarkLight";
+
+/* Class = "NSWindow"; title = "Alert"; ObjectID = "jhv-HU-nQG"; */
+"jhv-HU-nQG.title" = "Alert";
 
 /* Class = "NSButtonCell"; title = "Yes"; ObjectID = "oba-7k-ITg"; */
 "oba-7k-ITg.title" = "Yes";

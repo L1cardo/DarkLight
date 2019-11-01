@@ -54,7 +54,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-232" y="20"/>
+            <point key="canvasLocation" x="-226" y="24"/>
         </menu>
         <window title="About" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="9do-6G-TU2">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
@@ -87,7 +87,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tlm-z7-vA1">
                                 <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="VAy-bv-4bN">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -95,7 +95,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nzO-x3-PVT">
                                 <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="8zw-Z0-Rci">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -370,7 +370,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Pdc-dA-z4g">
                                 <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="G6L-zH-zGE">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -378,7 +378,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5ea-aP-7XQ">
                                 <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="Roe-Ta-HIR">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -409,7 +409,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QyM-2D-5l0">
                                 <rect key="frame" x="16" y="67" width="229" height="14"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="DarkLight will launch at login automatically" id="szz-PM-bI6">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -444,7 +444,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7xU-pM-ZPE">
                                 <rect key="frame" x="16" y="0.0" width="246" height="28"/>
                                 <textFieldCell key="cell" title="Switch between Dark and Light mode with keyboard shortcut" id="QC7-fx-ayi">
-                                    <font key="font" metaFont="menu" size="11"/>
+                                    <font key="font" metaFont="toolTip"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -481,7 +481,7 @@
                     <stackView distribution="fill" orientation="horizontal" alignment="bottom" spacing="30" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tka-Am-lvZ" userLabel="Button">
                         <rect key="frame" x="85" y="44" width="130" height="18"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-F2-RTt">
+                            <button toolTip="Close Preferences" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6dW-F2-RTt">
                                 <rect key="frame" x="0.0" y="-1" width="50" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="pAI-dg-9nC"/>
@@ -494,7 +494,7 @@
                                     <action selector="preferencesWindowClosetButton:" target="Voe-Tx-rLC" id="4cp-tS-UXW"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-nz-dJn">
+                            <button toolTip="Quit DarkLight" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-nz-dJn">
                                 <rect key="frame" x="80" y="-1" width="50" height="19"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="VhP-Ea-wa9"/>
@@ -538,7 +538,7 @@
         <window title="Alert" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" titleVisibility="hidden" id="jhv-HU-nQG">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" topStrut="YES"/>
-            <rect key="contentRect" x="196" y="550" width="420" height="150"/>
+            <rect key="contentRect" x="196" y="600" width="420" height="150"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
             <view key="contentView" id="q4L-gS-EfI">
                 <rect key="frame" x="0.0" y="0.0" width="420" height="150"/>
@@ -633,7 +633,7 @@
                     <constraint firstAttribute="bottom" secondItem="Fhi-vg-2MG" secondAttribute="bottom" constant="20" id="rxS-DY-SqT"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="-363" y="455"/>
+            <point key="canvasLocation" x="-338" y="221"/>
         </window>
     </objects>
     <resources>
