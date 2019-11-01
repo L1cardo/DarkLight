@@ -15,20 +15,23 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     
     @IBOutlet weak var statusBarMenu: NSMenu!
-    @IBOutlet weak var aboutPanelVersionNum: NSTextField!
-    @IBOutlet weak var preferencesPanelVersionNum: NSTextField!
+    @IBOutlet weak var aboutWindowVersionNum: NSTextField!
+    @IBOutlet weak var preferencesWindowVersionNum: NSTextField!
     @IBOutlet weak var darkLightShortcut: MASShortcutView!
     @IBOutlet weak var launchAtLoginCheckbox: NSButton!
+    @IBOutlet weak var preferencesWindow: NSWindow!
+    @IBOutlet weak var aboutWindow: NSWindow!
+    @IBOutlet weak var alertWindow: NSWindow!
     
     let statusBarMenuItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     
-        aboutPanelVersionNum.stringValue = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-        preferencesPanelVersionNum.stringValue = aboutPanelVersionNum.stringValue
+        aboutWindowVersionNum.stringValue = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
+        preferencesWindowVersionNum.stringValue = aboutWindowVersionNum.stringValue
         
-            statusBarMenuItem.button?.image = NSImage(named: "StatusBarIcon")
+        statusBarMenuItem.button?.image = NSImage(named: "StatusBarIcon")
         statusBarMenuItem.button?.toolTip = "DarkLight"
         
         darkLightShortcut.associatedUserDefaultsKey = "darkLightSwith"
@@ -58,14 +61,43 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    // status bar preferences button
+    @IBAction func statusBarPreferencesButton(_ sender: NSMenuItem) {
+        NSApp.activate(ignoringOtherApps: true)
+        preferencesWindow.makeKeyAndOrderFront(sender)
+    }
+    
+    // status bar about button
+    @IBAction func statusBarAboutButton(_ sender: NSMenuItem) {
+        NSApp.activate(ignoringOtherApps: true)
+        aboutWindow.makeKeyAndOrderFront(sender)
+    }
+    
     // status bar quit button
     @IBAction func statusBarQuitButton(_ sender: NSMenuItem) {
+        NSApp.activate(ignoringOtherApps: true)
+        alertWindow.makeKeyAndOrderFront(sender)
+    }
+    
+    // preferences window close button
+    @IBAction func preferencesWindowClosetButton(_ sender: Any) {
+        preferencesWindow.close()
+    }
+    
+    // preferences window quit button
+    @IBAction func preferencesWindowQuitButton(_ sender: NSButton) {
+        NSApp.activate(ignoringOtherApps: true)
+        alertWindow.makeKeyAndOrderFront(sender)
+    }
+    
+    // alert window yes button
+    @IBAction func alertWindowYesButton(_ sender: NSButton) {
         NSApp.terminate(self)
     }
     
-    // preferences panel quit button
-    @IBAction func preferencesPanelQuitButton(_ sender: NSButton) {
-        NSApp.terminate(self)
+    // alert window cancel button
+    @IBAction func alertWindowCancelButton(_ sender: NSButton) {
+        alertWindow.close()
     }
     
     // launch at login checkbox

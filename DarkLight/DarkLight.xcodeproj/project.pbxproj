@@ -33,7 +33,7 @@
 		410107EC7D4FBF973F572B70 /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
 		5745033F636D69E177C93069 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
 		963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
-		963F040F236B2A2200B30BEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		964D9809236BE8B10059236F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		966896882369D2AB009DDB4E /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9668968B2369D2AB009DDB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9668968D2369D2AB009DDB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 			children = (
 				966896902369D2AB009DDB4E /* Base */,
 				96C30732236AEAB60006C909 /* zh-Hans */,
-				963F040F236B2A2200B30BEF /* en */,
+				964D9809236BE8B10059236F /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
