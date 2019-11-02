@@ -53,9 +53,6 @@
 /* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "VAy-bv-4bN"; */
 "VAy-bv-4bN.title" = "Version:";
 
-/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "Xjg-QV-Bsa"; */
-"Xjg-QV-Bsa.title" = "Launch At Login";
-
 /* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "Ync-1o-RYs"; */
 "Ync-1o-RYs.title" = "https://github.com/L1cardo";
 
@@ -79,6 +76,9 @@
 
 /* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "hfv-is-4u2"; */
 "hfv-is-4u2.title" = "albert.abdilim@foxmail.com";
+
+/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "iA3-Ap-07N"; */
+"iA3-Ap-07N.title" = "Launch At Login";
 
 /* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "iNF-rP-1n8"; */
 "iNF-rP-1n8.title" = "Copyright © 2019 Licardo. All rights reserved.";
