@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		960F25DD236DBF1500AA0CB2 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */; };
+		960F25DE236DBF1500AA0CB2 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9684DCFB236D6C0F0007D930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684DCFA236D6C0F0007D930 /* AppDelegate.swift */; };
 		9684DCFD236D6C100007D930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFC236D6C100007D930 /* Assets.xcassets */; };
 		9684DD00236D6C100007D930 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFE236D6C100007D930 /* MainMenu.xib */; };
@@ -15,8 +17,26 @@
 		B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		960F25DF236DBF1500AA0CB2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				960F25DE236DBF1500AA0CB2 /* DFRFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
+		960F25D3236DBB9B00AA0CB2 /* DarkLight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkLight-Bridging-Header.h"; sourceTree = "<group>"; };
+		960F25D6236DBBF300AA0CB2 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		960F25DB236DBD5F00AA0CB2 /* TouchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchBar.h; path = "../../../../Desktop/touch-baer/TouchBarTest/TouchBar.h"; sourceTree = "<group>"; };
+		960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
 		9684DCF7236D6C0F0007D930 /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9684DCFA236D6C0F0007D930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9684DCFC236D6C100007D930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960F25DD236DBF1500AA0CB2 /* DFRFoundation.framework in Frameworks */,
 				B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +68,8 @@
 		1CFF6105B7561C1F83B1D9E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				960F25D6236DBBF300AA0CB2 /* DFRFoundation.framework */,
+				960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */,
 				C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */,
 			);
 			name = Frameworks;
@@ -59,6 +82,17 @@
 				8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		960F25D2236DBB1600AA0CB2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9684DD01236D6C100007D930 /* Info.plist */,
+				9684DD02236D6C100007D930 /* DarkLight.entitlements */,
+				960F25DB236DBD5F00AA0CB2 /* TouchBar.h */,
+				960F25D3236DBB9B00AA0CB2 /* DarkLight-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9684DCEE236D6C0F0007D930 = {
@@ -86,8 +120,7 @@
 				9684DD0F236D7E3C0007D930 /* Localizations */,
 				9684DCFC236D6C100007D930 /* Assets.xcassets */,
 				9684DCFE236D6C100007D930 /* MainMenu.xib */,
-				9684DD01236D6C100007D930 /* Info.plist */,
-				9684DD02236D6C100007D930 /* DarkLight.entitlements */,
+				960F25D2236DBB1600AA0CB2 /* Supporting Files */,
 			);
 			path = DarkLight;
 			sourceTree = "<group>";
@@ -113,6 +146,7 @@
 				9684DCF4236D6C0F0007D930 /* Frameworks */,
 				9684DCF5236D6C0F0007D930 /* Resources */,
 				500CA4DF7BDC5067BFDA6325 /* [CP] Embed Pods Frameworks */,
+				960F25DF236DBF1500AA0CB2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +169,7 @@
 				TargetAttributes = {
 					9684DCF6236D6C0F0007D930 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -367,21 +402,28 @@
 			baseConfigurationReference = EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DarkLight/DarkLight.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 20191102;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = DarkLight/Info.plist;
+				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/Supporting Files/DarkLight-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Debug;
 		};
@@ -390,21 +432,27 @@
 			baseConfigurationReference = 8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = DarkLight/DarkLight.entitlements;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 20191102;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = DarkLight/Info.plist;
+				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/Supporting Files/DarkLight-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 			};
 			name = Release;
 		};

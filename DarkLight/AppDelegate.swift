@@ -58,6 +58,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         )
         getCurrentAppearance()
         
+        touchBarDarkLight()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -71,6 +73,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else if mouseEvent.type == NSEvent.EventType.rightMouseUp {
             displayStatusBarMenu()
         }
+    }
+    
+    @objc func touchBarCliced(sender: NSButton) {
+        darkLight()
     }
     
     // get current appearance, dark or light
@@ -176,6 +182,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let script = NSAppleScript(source: darkLightScript)
         script!.executeAndReturnError(nil)
+    }
+    
+    //
+    func touchBarDarkLight() {
+        DFRSystemModalShowsCloseBoxWhenFrontMost(true)
+        
+        let dakrLightTouchBarItem = NSTouchBarItem.Identifier(rawValue: "DakrLight")
+        let dakrLightCustomTouchBarItem = NSCustomTouchBarItem.init(identifier: dakrLightTouchBarItem)
+        dakrLightCustomTouchBarItem.view = NSButton(image: NSImage(named: "TouchBarIcon")!, target: self, action: #selector(self.touchBarCliced(sender:)))
+        NSTouchBarItem.addSystemTrayItem(dakrLightCustomTouchBarItem)
+        
+        DFRElementSetControlStripPresenceForIdentifier(dakrLightTouchBarItem, true)
     }
     
     // about panel urls
