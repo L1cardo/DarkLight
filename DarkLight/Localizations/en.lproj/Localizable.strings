@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  DarkLight
+
+  Created by Licardo on 2019/11/2.
+  Copyright © 2019 Licardo. All rights reserved.
+*/
+
+"Click to Switch!" = "Click to Switch!";
+"Dark" = "Dark";
+"Light" = "Light";

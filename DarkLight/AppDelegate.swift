@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusBarMenu: NSMenu!
     @IBOutlet weak var aboutWindowVersionNum: NSTextField!
     @IBOutlet weak var preferencesWindowVersionNum: NSTextField!
+    @IBOutlet weak var currentAppearance: NSTextField!
     @IBOutlet weak var darkLightShortcut: MASShortcutView!
     @IBOutlet weak var launchAtLoginCheckbox: NSButton!
     @IBOutlet weak var preferencesWindow: NSWindow!
@@ -28,27 +29,38 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     
-        aboutWindowVersionNum.stringValue = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
-        preferencesWindowVersionNum.stringValue = aboutWindowVersionNum.stringValue
+        // get current version
+        let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+        preferencesWindowVersionNum.stringValue = version
+        aboutWindowVersionNum.stringValue = version
         
+        // set image to status bar menu
         statusBarMenuItem.button?.image = NSImage(named: "StatusBarIcon")
-        statusBarMenuItem.button?.toolTip = "DarkLight"
+        statusBarMenuItem.button?.toolTip = "Click to Switch!".localized
         
-        darkLightShortcut.associatedUserDefaultsKey = "darkLightSwith"
-        
-        launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
-        
+        // shortcut
         bindShortcut()
         
+        launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
+
+        // whether left mouse click or right mouse click on the status bar
         if let button = statusBarMenuItem.button {
             button.action = #selector(self.statusBarClicked(sender:))
             button.sendAction(on: [.leftMouseUp, .rightMouseUp])
         }
         
+        // get current appearance, dark or light
+        DistributedNotificationCenter.default().addObserver(
+            self,
+            selector: #selector(self.appleInterfaceThemeChangedNotification(notification:)),
+            name: NSNotification.Name(rawValue: "AppleInterfaceThemeChangedNotification"),
+            object: nil
+        )
+        getCurrentAppearance()
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
     }
 
     // whether left mouse click or right mouse click
@@ -59,6 +71,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else if mouseEvent.type == NSEvent.EventType.rightMouseUp {
             displayStatusBarMenu()
         }
+    }
+    
+    // get current appearance, dark or light
+    @objc func appleInterfaceThemeChangedNotification(notification: Notification) {
+        getCurrentAppearance()
     }
     
     // status bar preferences button
@@ -112,6 +129,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
+    // global shorcut
+    func bindShortcut() {
+        darkLightShortcut.associatedUserDefaultsKey = "darkLightSwith"
+        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: "darkLightSwith") {
+            self.darkLight()
+        }
+    }
+    
+    // get current appearance, dark or light
+    func getCurrentAppearance() {
+        var isDarkMode = false
+        if let appleInterfaceStyle = UserDefaults.standard.object(forKey: "AppleInterfaceStyle") as? String {
+            if appleInterfaceStyle.lowercased().contains("dark") {
+                isDarkMode = true
+            }
+        }
+        currentAppearance.stringValue = isDarkMode ? "Dark".localized : "Light".localized
+    }
+    
     // display status menu
     func displayStatusBarMenu() {
         guard let button = statusBarMenuItem.button else { return }
@@ -131,12 +167,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSMenu.popUpContextMenu(statusBarMenu, with: event, for: button)
         
     }
+    
     // dark light mode switch
     func darkLight() {
         let darkLightScript = """
             tell app "System Events" to tell appearance preferences to set dark mode to not dark mode
         """
-
+        
         let script = NSAppleScript(source: darkLightScript)
         script!.executeAndReturnError(nil)
     }
@@ -169,14 +206,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func email(_ sender: Any) {
         guard let url = URL(string: "mailto:albert.abdilim@foxmail.com") else {return}
         NSWorkspace.shared.open(url)
-    }
-}
-
-extension AppDelegate {
-    // global shorcut
-    func bindShortcut() {
-        MASShortcutBinder.shared()?.bindShortcut(withDefaultsKey: "darkLightSwith") {
-            self.darkLight()
-        }
     }
 }

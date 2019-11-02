@@ -7,99 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9668968C2369D2AB009DDB4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9668968B2369D2AB009DDB4E /* AppDelegate.swift */; };
-		9668968E2369D2AB009DDB4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9668968D2369D2AB009DDB4E /* Assets.xcassets */; };
-		966896912369D2AB009DDB4E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9668968F2369D2AB009DDB4E /* MainMenu.xib */; };
-		FEF7048F971EBE031E81FDEB /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5493B1AC706F6FBB8AA7D5 /* Pods_DarkLight.framework */; };
+		9684DCFB236D6C0F0007D930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684DCFA236D6C0F0007D930 /* AppDelegate.swift */; };
+		9684DCFD236D6C100007D930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFC236D6C100007D930 /* Assets.xcassets */; };
+		9684DD00236D6C100007D930 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFE236D6C100007D930 /* MainMenu.xib */; };
+		9684DD0E236D7E310007D930 /* LocalizedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684DD0D236D7E310007D930 /* LocalizedUtils.swift */; };
+		9684DD10236D7E960007D930 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9684DD12236D7E960007D930 /* Localizable.strings */; };
+		B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		410107EC7D4FBF973F572B70 /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
-		5745033F636D69E177C93069 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
-		963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LaunchAtLogin.framework; path = Carthage/Build/Mac/LaunchAtLogin.framework; sourceTree = "<group>"; };
-		964D980F236BED710059236F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		966896882369D2AB009DDB4E /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9668968B2369D2AB009DDB4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9668968D2369D2AB009DDB4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		966896902369D2AB009DDB4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		966896922369D2AB009DDB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		966896932369D2AB009DDB4E /* DarkLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkLight.entitlements; sourceTree = "<group>"; };
-		96C30732236AEAB60006C909 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
-		ED5493B1AC706F6FBB8AA7D5 /* Pods_DarkLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
+		9684DCF7236D6C0F0007D930 /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9684DCFA236D6C0F0007D930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9684DCFC236D6C100007D930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9684DCFF236D6C100007D930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9684DD01236D6C100007D930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9684DD02236D6C100007D930 /* DarkLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkLight.entitlements; sourceTree = "<group>"; };
+		9684DD08236D7AD40007D930 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		9684DD0A236D7ADC0007D930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		9684DD0D236D7E310007D930 /* LocalizedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUtils.swift; sourceTree = "<group>"; };
+		9684DD11236D7E960007D930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9684DD13236D7E970007D930 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		966896852369D2AB009DDB4E /* Frameworks */ = {
+		9684DCF4236D6C0F0007D930 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEF7048F971EBE031E81FDEB /* Pods_DarkLight.framework in Frameworks */,
+				B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		400F6A0B8752B16D4A6F82D0 /* Pods */ = {
+		1CFF6105B7561C1F83B1D9E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				410107EC7D4FBF973F572B70 /* Pods-DarkLight.debug.xcconfig */,
-				5745033F636D69E177C93069 /* Pods-DarkLight.release.xcconfig */,
+				C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		478F0ACA19223C5A937D5386 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */,
+				8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		9668967F2369D2AB009DDB4E = {
+		9684DCEE236D6C0F0007D930 = {
 			isa = PBXGroup;
 			children = (
-				9668968A2369D2AB009DDB4E /* DarkLight */,
-				966896892369D2AB009DDB4E /* Products */,
-				400F6A0B8752B16D4A6F82D0 /* Pods */,
-				FEA592B29F1C46F75FB11F6B /* Frameworks */,
+				9684DCF9236D6C0F0007D930 /* DarkLight */,
+				9684DCF8236D6C0F0007D930 /* Products */,
+				478F0ACA19223C5A937D5386 /* Pods */,
+				1CFF6105B7561C1F83B1D9E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		966896892369D2AB009DDB4E /* Products */ = {
+		9684DCF8236D6C0F0007D930 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				966896882369D2AB009DDB4E /* DarkLight.app */,
+				9684DCF7236D6C0F0007D930 /* DarkLight.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9668968A2369D2AB009DDB4E /* DarkLight */ = {
+		9684DCF9236D6C0F0007D930 /* DarkLight */ = {
 			isa = PBXGroup;
 			children = (
-				9668968B2369D2AB009DDB4E /* AppDelegate.swift */,
-				9668968D2369D2AB009DDB4E /* Assets.xcassets */,
-				9668968F2369D2AB009DDB4E /* MainMenu.xib */,
-				966896922369D2AB009DDB4E /* Info.plist */,
-				966896932369D2AB009DDB4E /* DarkLight.entitlements */,
+				9684DCFA236D6C0F0007D930 /* AppDelegate.swift */,
+				9684DD0F236D7E3C0007D930 /* Localizations */,
+				9684DCFC236D6C100007D930 /* Assets.xcassets */,
+				9684DCFE236D6C100007D930 /* MainMenu.xib */,
+				9684DD01236D6C100007D930 /* Info.plist */,
+				9684DD02236D6C100007D930 /* DarkLight.entitlements */,
 			);
 			path = DarkLight;
 			sourceTree = "<group>";
 		};
-		FEA592B29F1C46F75FB11F6B /* Frameworks */ = {
+		9684DD0F236D7E3C0007D930 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				963D267A236B0B6300C939D5 /* LaunchAtLogin.framework */,
-				ED5493B1AC706F6FBB8AA7D5 /* Pods_DarkLight.framework */,
+				9684DD0D236D7E310007D930 /* LocalizedUtils.swift */,
+				9684DD12236D7E960007D930 /* Localizable.strings */,
 			);
-			name = Frameworks;
+			path = Localizations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		966896872369D2AB009DDB4E /* DarkLight */ = {
+		9684DCF6236D6C0F0007D930 /* DarkLight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 966896962369D2AB009DDB4E /* Build configuration list for PBXNativeTarget "DarkLight" */;
+			buildConfigurationList = 9684DD05236D6C100007D930 /* Build configuration list for PBXNativeTarget "DarkLight" */;
 			buildPhases = (
-				E1A640AB92F41248C2264351 /* [CP] Check Pods Manifest.lock */,
-				966896842369D2AB009DDB4E /* Sources */,
-				966896852369D2AB009DDB4E /* Frameworks */,
-				966896862369D2AB009DDB4E /* Resources */,
-				32D59A26CB703DE39BABAD58 /* [CP] Embed Pods Frameworks */,
+				879A9BF15CA657990D12CB01 /* [CP] Check Pods Manifest.lock */,
+				9684DCF3236D6C0F0007D930 /* Sources */,
+				9684DCF4236D6C0F0007D930 /* Frameworks */,
+				9684DCF5236D6C0F0007D930 /* Resources */,
+				500CA4DF7BDC5067BFDA6325 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,25 +120,25 @@
 			);
 			name = DarkLight;
 			productName = DarkLight;
-			productReference = 966896882369D2AB009DDB4E /* DarkLight.app */;
+			productReference = 9684DCF7236D6C0F0007D930 /* DarkLight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		966896802369D2AB009DDB4E /* Project object */ = {
+		9684DCEF236D6C0F0007D930 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Licardo;
 				TargetAttributes = {
-					966896872369D2AB009DDB4E = {
-						CreatedOnToolsVersion = 11.1;
+					9684DCF6236D6C0F0007D930 = {
+						CreatedOnToolsVersion = 11.2;
 					};
 				};
 			};
-			buildConfigurationList = 966896832369D2AB009DDB4E /* Build configuration list for PBXProject "DarkLight" */;
+			buildConfigurationList = 9684DCF2236D6C0F0007D930 /* Build configuration list for PBXProject "DarkLight" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,30 +147,31 @@
 				Base,
 				"zh-Hans",
 			);
-			mainGroup = 9668967F2369D2AB009DDB4E;
-			productRefGroup = 966896892369D2AB009DDB4E /* Products */;
+			mainGroup = 9684DCEE236D6C0F0007D930;
+			productRefGroup = 9684DCF8236D6C0F0007D930 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				966896872369D2AB009DDB4E /* DarkLight */,
+				9684DCF6236D6C0F0007D930 /* DarkLight */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		966896862369D2AB009DDB4E /* Resources */ = {
+		9684DCF5236D6C0F0007D930 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9668968E2369D2AB009DDB4E /* Assets.xcassets in Resources */,
-				966896912369D2AB009DDB4E /* MainMenu.xib in Resources */,
+				9684DCFD236D6C100007D930 /* Assets.xcassets in Resources */,
+				9684DD10236D7E960007D930 /* Localizable.strings in Resources */,
+				9684DD00236D6C100007D930 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		32D59A26CB703DE39BABAD58 /* [CP] Embed Pods Frameworks */ = {
+		500CA4DF7BDC5067BFDA6325 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -174,7 +188,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1A640AB92F41248C2264351 /* [CP] Check Pods Manifest.lock */ = {
+		879A9BF15CA657990D12CB01 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -199,31 +213,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		966896842369D2AB009DDB4E /* Sources */ = {
+		9684DCF3236D6C0F0007D930 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9668968C2369D2AB009DDB4E /* AppDelegate.swift in Sources */,
+				9684DCFB236D6C0F0007D930 /* AppDelegate.swift in Sources */,
+				9684DD0E236D7E310007D930 /* LocalizedUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9668968F2369D2AB009DDB4E /* MainMenu.xib */ = {
+		9684DCFE236D6C100007D930 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				966896902369D2AB009DDB4E /* Base */,
-				96C30732236AEAB60006C909 /* zh-Hans */,
-				964D980F236BED710059236F /* en */,
+				9684DCFF236D6C100007D930 /* Base */,
+				9684DD08236D7AD40007D930 /* zh-Hans */,
+				9684DD0A236D7ADC0007D930 /* en */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9684DD12236D7E960007D930 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9684DD11236D7E960007D930 /* en */,
+				9684DD13236D7E970007D930 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		966896942369D2AB009DDB4E /* Debug */ = {
+		9684DD03236D6C100007D930 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,7 +308,7 @@
 			};
 			name = Debug;
 		};
-		966896952369D2AB009DDB4E /* Release */ = {
+		9684DD04236D6C100007D930 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -338,19 +362,17 @@
 			};
 			name = Release;
 		};
-		966896972369D2AB009DDB4E /* Debug */ = {
+		9684DD06236D6C100007D930 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 410107EC7D4FBF973F572B70 /* Pods-DarkLight.debug.xcconfig */;
+			baseConfigurationReference = EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkLight/DarkLight.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191101;
+				CURRENT_PROJECT_VERSION = 20191102;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DarkLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -363,19 +385,17 @@
 			};
 			name = Debug;
 		};
-		966896982369D2AB009DDB4E /* Release */ = {
+		9684DD07236D6C100007D930 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5745033F636D69E177C93069 /* Pods-DarkLight.release.xcconfig */;
+			baseConfigurationReference = 8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DarkLight/DarkLight.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191101;
+				CURRENT_PROJECT_VERSION = 20191102;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = DarkLight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,25 +411,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		966896832369D2AB009DDB4E /* Build configuration list for PBXProject "DarkLight" */ = {
+		9684DCF2236D6C0F0007D930 /* Build configuration list for PBXProject "DarkLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				966896942369D2AB009DDB4E /* Debug */,
-				966896952369D2AB009DDB4E /* Release */,
+				9684DD03236D6C100007D930 /* Debug */,
+				9684DD04236D6C100007D930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		966896962369D2AB009DDB4E /* Build configuration list for PBXNativeTarget "DarkLight" */ = {
+		9684DD05236D6C100007D930 /* Build configuration list for PBXNativeTarget "DarkLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				966896972369D2AB009DDB4E /* Debug */,
-				966896982369D2AB009DDB4E /* Release */,
+				9684DD06236D6C100007D930 /* Debug */,
+				9684DD07236D6C100007D930 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 966896802369D2AB009DDB4E /* Project object */;
+	rootObject = 9684DCEF236D6C0F0007D930 /* Project object */;
 }
