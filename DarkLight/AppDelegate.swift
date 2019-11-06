@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DarkLight
 //
-//  Created by Licardo on 2019/10/30.
+//  Created by Licardo on 2019/11/6.
 //  Copyright © 2019 Licardo. All rights reserved.
 //
 
@@ -75,33 +75,40 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    @objc func touchBarCliced(sender: NSButton) {
-        darkLight()
-    }
+
     
     // get current appearance, dark or light
     @objc func appleInterfaceThemeChangedNotification(notification: Notification) {
         getCurrentAppearance()
     }
     
-    // status bar preferences button
-    @IBAction func statusBarPreferencesButton(_ sender: NSMenuItem) {
-        NSApp.activate(ignoringOtherApps: true)
-        aboutWindow.close()
-        preferencesWindow.makeKeyAndOrderFront(sender)
+    // click status bar menu item
+    @IBAction func didClickStatusBarMenuItem(_ sender: NSMenuItem) {
+        switch sender.tag {
+        case 1:
+            NSApp.activate(ignoringOtherApps: true)
+            aboutWindow.close()
+            preferencesWindow.makeKeyAndOrderFront(sender)
+        case 3:
+            NSApp.activate(ignoringOtherApps: true)
+            preferencesWindow.close()
+            aboutWindow.makeKeyAndOrderFront(sender)
+        case 4:
+            NSApp.activate(ignoringOtherApps: true)
+            alertWindow.makeKeyAndOrderFront(sender)
+        default:
+            return
+        }
     }
     
-    // status bar about button
-    @IBAction func statusBarAboutButton(_ sender: NSMenuItem) {
-        NSApp.activate(ignoringOtherApps: true)
-        preferencesWindow.close()
-        aboutWindow.makeKeyAndOrderFront(sender)
-    }
-    
-    // status bar quit button
-    @IBAction func statusBarQuitButton(_ sender: NSMenuItem) {
-        NSApp.activate(ignoringOtherApps: true)
-        alertWindow.makeKeyAndOrderFront(sender)
+    // launch at login checkbox
+    @IBAction func launchAtLoginChecked(_ sender: NSButton) {
+        let isChecked = launchAtLoginCheckbox.state == .on
+        if isChecked == true {
+            LoginServiceKit.addLoginItems()
+        } else {
+            LoginServiceKit.removeLoginItems()
+        }
     }
     
     // preferences window close button
@@ -123,16 +130,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // alert window cancel button
     @IBAction func alertWindowCancelButton(_ sender: NSButton) {
         alertWindow.close()
-    }
-    
-    // launch at login checkbox
-    @IBAction func launchAtLoginChecked(_ sender: NSButton) {
-        let isChecked = launchAtLoginCheckbox.state == .on
-        if isChecked == true {
-            LoginServiceKit.addLoginItems()
-        } else {
-            LoginServiceKit.removeLoginItems()
-        }
     }
     
     // global shorcut
@@ -176,15 +173,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // dark light mode switch
     func darkLight() {
-        let darkLightScript = """
-            tell app "System Events" to tell appearance preferences to set dark mode to not dark mode
-        """
-        
+        let darkLightScript = #"tell app "System Events" to tell appearance preferences to set dark mode to not dark mode"#
         let script = NSAppleScript(source: darkLightScript)
         script!.executeAndReturnError(nil)
     }
     
-    //
+    // touch bar
+    @objc func touchBarCliced(sender: NSButton) {
+        darkLight()
+    }
+    
     func touchBarDarkLight() {
         DFRSystemModalShowsCloseBoxWhenFrontMost(true)
         
@@ -197,32 +195,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     // about panel urls
-    @IBAction func github(_ sender: Any) {
-        guard let url = URL(string: "https://github.com/L1cardo") else {return}
-        NSWorkspace.shared.open(url)
+    @IBAction func didClickURL(_ sender: NSButton) {
+        let url: String
+        switch sender.tag {
+        case 1:
+            url = "https://github.com/L1cardo"
+        case 2:
+            url = "https://licardo.cn"
+        case 3:
+            url = "https://twitter.com/AlbertAbdilim"
+        case 41:
+            url = "https://paypal.me/mrlicardo"
+        case 42:
+            url = "https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/alipay.jpg"
+        case 43:
+            url = "https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/wechat.jpg"
+        case 5:
+            url = "mailto:albert.abdilim@foxmail.com"
+        default:
+            return
+        }
+        NSWorkspace.shared.open(URL(string: url)!)
     }
-    @IBAction func homePage(_ sender: Any) {
-        guard let url = URL(string: "https://licardo.cn") else {return}
-        NSWorkspace.shared.open(url)
-    }
-    @IBAction func twitter(_ sender: Any) {
-        guard let url = URL(string: "https://twitter.com/AlbertAbdilim") else {return}
-        NSWorkspace.shared.open(url)
-    }
-    @IBAction func paypal(_ sender: Any) {
-        guard let url = URL(string: "https://paypal.me/mrlicardo") else {return}
-        NSWorkspace.shared.open(url)
-    }
-    @IBAction func alipay(_ sender: Any) {
-        guard let url = URL(string: "https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/alipay.jpg") else {return}
-        NSWorkspace.shared.open(url)
-    }
-    @IBAction func wechat(_ sender: Any) {
-        guard let url = URL(string: "https://raw.githubusercontent.com/L1cardo/Image-Hosting/master/donate/wechat.jpg") else {return}
-        NSWorkspace.shared.open(url)
-    }
-    @IBAction func email(_ sender: Any) {
-        guard let url = URL(string: "mailto:albert.abdilim@foxmail.com") else {return}
-        NSWorkspace.shared.open(url)
-    }
+
 }
+

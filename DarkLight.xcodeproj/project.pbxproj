@@ -7,24 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960F25DD236DBF1500AA0CB2 /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */; };
-		960F25DE236DBF1500AA0CB2 /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9684DCFB236D6C0F0007D930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684DCFA236D6C0F0007D930 /* AppDelegate.swift */; };
-		9684DCFD236D6C100007D930 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFC236D6C100007D930 /* Assets.xcassets */; };
-		9684DD00236D6C100007D930 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9684DCFE236D6C100007D930 /* MainMenu.xib */; };
-		9684DD0E236D7E310007D930 /* LocalizedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9684DD0D236D7E310007D930 /* LocalizedUtils.swift */; };
-		9684DD10236D7E960007D930 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9684DD12236D7E960007D930 /* Localizable.strings */; };
-		B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */; };
+		0E1EA31E63555F3BD68287CF /* Pods_DarkLight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24FE37AAE7D30F5F41197F8 /* Pods_DarkLight.framework */; };
+		96AB1CE82373153C00A539CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CE72373153C00A539CA /* AppDelegate.swift */; };
+		96AB1CEA2373153D00A539CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96AB1CE92373153D00A539CA /* Assets.xcassets */; };
+		96AB1CED2373153D00A539CA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96AB1CEB2373153D00A539CA /* MainMenu.xib */; };
+		96AB1CFD2373187A00A539CA /* LocalizedUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1CFC2373187A00A539CA /* LocalizedUtils.swift */; };
+		96AB1D002373196E00A539CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96AB1D022373196E00A539CA /* Localizable.strings */; };
+		96AB1D07237319E900A539CA /* TouchBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 96AB1D06237319E900A539CA /* TouchBar.h */; };
+		96AB1D0A23731B2C00A539CA /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96AB1D0923731B2C00A539CA /* DFRFoundation.framework */; };
+		96AB1D0B23731B2C00A539CA /* DFRFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96AB1D0923731B2C00A539CA /* DFRFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		960F25DF236DBF1500AA0CB2 /* Embed Frameworks */ = {
+		96AB1D0C23731B2C00A539CA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				960F25DE236DBF1500AA0CB2 /* DFRFoundation.framework in Embed Frameworks */,
+				96AB1D0B23731B2C00A539CA /* DFRFoundation.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,121 +33,127 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
-		960F25D3236DBB9B00AA0CB2 /* DarkLight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkLight-Bridging-Header.h"; sourceTree = "<group>"; };
-		960F25D6236DBBF300AA0CB2 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
-		960F25DB236DBD5F00AA0CB2 /* TouchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchBar.h; path = "../../../../Desktop/touch-baer/TouchBarTest/TouchBar.h"; sourceTree = "<group>"; };
-		960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
-		9684DCF7236D6C0F0007D930 /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9684DCFA236D6C0F0007D930 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9684DCFC236D6C100007D930 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9684DCFF236D6C100007D930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		9684DD01236D6C100007D930 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9684DD02236D6C100007D930 /* DarkLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkLight.entitlements; sourceTree = "<group>"; };
-		9684DD08236D7AD40007D930 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
-		9684DD0A236D7ADC0007D930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		9684DD0D236D7E310007D930 /* LocalizedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUtils.swift; sourceTree = "<group>"; };
-		9684DD11236D7E960007D930 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		9684DD13236D7E970007D930 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
+		367B0E394D9495A0D43C3B1B /* Pods-DarkLight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.debug.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.debug.xcconfig"; sourceTree = "<group>"; };
+		96AB1CE42373153C00A539CA /* DarkLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96AB1CE72373153C00A539CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96AB1CE92373153D00A539CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96AB1CEC2373153D00A539CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96AB1CEE2373153D00A539CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AB1CEF2373153D00A539CA /* DarkLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkLight.entitlements; sourceTree = "<group>"; };
+		96AB1CF92373183000A539CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
+		96AB1CFB2373184000A539CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		96AB1CFC2373187A00A539CA /* LocalizedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUtils.swift; sourceTree = "<group>"; };
+		96AB1D012373196E00A539CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96AB1D032373197200A539CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		96AB1D05237319E800A539CA /* DarkLight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkLight-Bridging-Header.h"; sourceTree = "<group>"; };
+		96AB1D06237319E900A539CA /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		96AB1D0923731B2C00A539CA /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		D4036EC03D1B45F288AFD22E /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
+		F24FE37AAE7D30F5F41197F8 /* Pods_DarkLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9684DCF4236D6C0F0007D930 /* Frameworks */ = {
+		96AB1CE12373153C00A539CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				960F25DD236DBF1500AA0CB2 /* DFRFoundation.framework in Frameworks */,
-				B9081C4E1013A3CEC462BC72 /* Pods_DarkLight.framework in Frameworks */,
+				96AB1D0A23731B2C00A539CA /* DFRFoundation.framework in Frameworks */,
+				0E1EA31E63555F3BD68287CF /* Pods_DarkLight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CFF6105B7561C1F83B1D9E2 /* Frameworks */ = {
+		3DA689460B4179B2B77C4E0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				960F25D6236DBBF300AA0CB2 /* DFRFoundation.framework */,
-				960F25DC236DBF1500AA0CB2 /* DFRFoundation.framework */,
-				C2B3CBF77EB2242CE841D275 /* Pods_DarkLight.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		478F0ACA19223C5A937D5386 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */,
-				8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */,
+				367B0E394D9495A0D43C3B1B /* Pods-DarkLight.debug.xcconfig */,
+				D4036EC03D1B45F288AFD22E /* Pods-DarkLight.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		960F25D2236DBB1600AA0CB2 /* Supporting Files */ = {
+		718A0D43B5E2F1A24888058E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9684DD01236D6C100007D930 /* Info.plist */,
-				9684DD02236D6C100007D930 /* DarkLight.entitlements */,
-				960F25DB236DBD5F00AA0CB2 /* TouchBar.h */,
-				960F25D3236DBB9B00AA0CB2 /* DarkLight-Bridging-Header.h */,
+				96AB1D0923731B2C00A539CA /* DFRFoundation.framework */,
+				F24FE37AAE7D30F5F41197F8 /* Pods_DarkLight.framework */,
 			);
-			path = "Supporting Files";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9684DCEE236D6C0F0007D930 = {
+		96AB1CDB2373153C00A539CA = {
 			isa = PBXGroup;
 			children = (
-				9684DCF9236D6C0F0007D930 /* DarkLight */,
-				9684DCF8236D6C0F0007D930 /* Products */,
-				478F0ACA19223C5A937D5386 /* Pods */,
-				1CFF6105B7561C1F83B1D9E2 /* Frameworks */,
+				96AB1CE62373153C00A539CA /* DarkLight */,
+				96AB1CE52373153C00A539CA /* Products */,
+				3DA689460B4179B2B77C4E0B /* Pods */,
+				718A0D43B5E2F1A24888058E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9684DCF8236D6C0F0007D930 /* Products */ = {
+		96AB1CE52373153C00A539CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9684DCF7236D6C0F0007D930 /* DarkLight.app */,
+				96AB1CE42373153C00A539CA /* DarkLight.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9684DCF9236D6C0F0007D930 /* DarkLight */ = {
+		96AB1CE62373153C00A539CA /* DarkLight */ = {
 			isa = PBXGroup;
 			children = (
-				9684DCFA236D6C0F0007D930 /* AppDelegate.swift */,
-				9684DD0F236D7E3C0007D930 /* Localizations */,
-				9684DCFC236D6C100007D930 /* Assets.xcassets */,
-				9684DCFE236D6C100007D930 /* MainMenu.xib */,
-				960F25D2236DBB1600AA0CB2 /* Supporting Files */,
+				96AB1CE72373153C00A539CA /* AppDelegate.swift */,
+				96AB1D0D23731F6700A539CA /* TouchBar */,
+				96AB1D0823731A1700A539CA /* Supporting Files */,
+				96AB1CEB2373153D00A539CA /* MainMenu.xib */,
+				96AB1D04237319A100A539CA /* Localizations */,
 			);
 			path = DarkLight;
 			sourceTree = "<group>";
 		};
-		9684DD0F236D7E3C0007D930 /* Localizations */ = {
+		96AB1D04237319A100A539CA /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
-				9684DD0D236D7E310007D930 /* LocalizedUtils.swift */,
-				9684DD12236D7E960007D930 /* Localizable.strings */,
+				96AB1CFC2373187A00A539CA /* LocalizedUtils.swift */,
+				96AB1D022373196E00A539CA /* Localizable.strings */,
 			);
 			path = Localizations;
+			sourceTree = "<group>";
+		};
+		96AB1D0823731A1700A539CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96AB1CE92373153D00A539CA /* Assets.xcassets */,
+				96AB1CEE2373153D00A539CA /* Info.plist */,
+				96AB1CEF2373153D00A539CA /* DarkLight.entitlements */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96AB1D0D23731F6700A539CA /* TouchBar */ = {
+			isa = PBXGroup;
+			children = (
+				96AB1D06237319E900A539CA /* TouchBar.h */,
+				96AB1D05237319E800A539CA /* DarkLight-Bridging-Header.h */,
+			);
+			path = TouchBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9684DCF6236D6C0F0007D930 /* DarkLight */ = {
+		96AB1CE32373153C00A539CA /* DarkLight */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9684DD05236D6C100007D930 /* Build configuration list for PBXNativeTarget "DarkLight" */;
+			buildConfigurationList = 96AB1CF22373153D00A539CA /* Build configuration list for PBXNativeTarget "DarkLight" */;
 			buildPhases = (
-				879A9BF15CA657990D12CB01 /* [CP] Check Pods Manifest.lock */,
-				9684DCF3236D6C0F0007D930 /* Sources */,
-				9684DCF4236D6C0F0007D930 /* Frameworks */,
-				9684DCF5236D6C0F0007D930 /* Resources */,
-				500CA4DF7BDC5067BFDA6325 /* [CP] Embed Pods Frameworks */,
-				960F25DF236DBF1500AA0CB2 /* Embed Frameworks */,
+				31AF1C500AEB7DAB54426F9C /* [CP] Check Pods Manifest.lock */,
+				96AB1CE02373153C00A539CA /* Sources */,
+				96AB1CE12373153C00A539CA /* Frameworks */,
+				96AB1CE22373153C00A539CA /* Resources */,
+				D1ADA7E3660497277E279339 /* [CP] Embed Pods Frameworks */,
+				96AB1D0C23731B2C00A539CA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,26 +161,26 @@
 			);
 			name = DarkLight;
 			productName = DarkLight;
-			productReference = 9684DCF7236D6C0F0007D930 /* DarkLight.app */;
+			productReference = 96AB1CE42373153C00A539CA /* DarkLight.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9684DCEF236D6C0F0007D930 /* Project object */ = {
+		96AB1CDC2373153C00A539CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Licardo;
 				TargetAttributes = {
-					9684DCF6236D6C0F0007D930 = {
+					96AB1CE32373153C00A539CA = {
 						CreatedOnToolsVersion = 11.2;
 						LastSwiftMigration = 1120;
 					};
 				};
 			};
-			buildConfigurationList = 9684DCF2236D6C0F0007D930 /* Build configuration list for PBXProject "DarkLight" */;
+			buildConfigurationList = 96AB1CDF2373153C00A539CA /* Build configuration list for PBXProject "DarkLight" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -182,48 +189,31 @@
 				Base,
 				"zh-Hans",
 			);
-			mainGroup = 9684DCEE236D6C0F0007D930;
-			productRefGroup = 9684DCF8236D6C0F0007D930 /* Products */;
+			mainGroup = 96AB1CDB2373153C00A539CA;
+			productRefGroup = 96AB1CE52373153C00A539CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9684DCF6236D6C0F0007D930 /* DarkLight */,
+				96AB1CE32373153C00A539CA /* DarkLight */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9684DCF5236D6C0F0007D930 /* Resources */ = {
+		96AB1CE22373153C00A539CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9684DCFD236D6C100007D930 /* Assets.xcassets in Resources */,
-				9684DD10236D7E960007D930 /* Localizable.strings in Resources */,
-				9684DD00236D6C100007D930 /* MainMenu.xib in Resources */,
+				96AB1CEA2373153D00A539CA /* Assets.xcassets in Resources */,
+				96AB1D002373196E00A539CA /* Localizable.strings in Resources */,
+				96AB1CED2373153D00A539CA /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		500CA4DF7BDC5067BFDA6325 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		879A9BF15CA657990D12CB01 /* [CP] Check Pods Manifest.lock */ = {
+		31AF1C500AEB7DAB54426F9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,36 +235,54 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D1ADA7E3660497277E279339 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DarkLight/Pods-DarkLight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9684DCF3236D6C0F0007D930 /* Sources */ = {
+		96AB1CE02373153C00A539CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9684DCFB236D6C0F0007D930 /* AppDelegate.swift in Sources */,
-				9684DD0E236D7E310007D930 /* LocalizedUtils.swift in Sources */,
+				96AB1D07237319E900A539CA /* TouchBar.h in Sources */,
+				96AB1CE82373153C00A539CA /* AppDelegate.swift in Sources */,
+				96AB1CFD2373187A00A539CA /* LocalizedUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9684DCFE236D6C100007D930 /* MainMenu.xib */ = {
+		96AB1CEB2373153D00A539CA /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9684DCFF236D6C100007D930 /* Base */,
-				9684DD08236D7AD40007D930 /* zh-Hans */,
-				9684DD0A236D7ADC0007D930 /* en */,
+				96AB1CEC2373153D00A539CA /* Base */,
+				96AB1CF92373183000A539CA /* zh-Hans */,
+				96AB1CFB2373184000A539CA /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
-		9684DD12236D7E960007D930 /* Localizable.strings */ = {
+		96AB1D022373196E00A539CA /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9684DD11236D7E960007D930 /* en */,
-				9684DD13236D7E970007D930 /* zh-Hans */,
+				96AB1D012373196E00A539CA /* en */,
+				96AB1D032373197200A539CA /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -282,7 +290,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9684DD03236D6C100007D930 /* Debug */ = {
+		96AB1CF02373153D00A539CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -343,7 +351,7 @@
 			};
 			name = Debug;
 		};
-		9684DD04236D6C100007D930 /* Release */ = {
+		96AB1CF12373153D00A539CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -397,16 +405,16 @@
 			};
 			name = Release;
 		};
-		9684DD06236D6C100007D930 /* Debug */ = {
+		96AB1CF32373153D00A539CA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA18A11D75EEAC7A2F09F83F /* Pods-DarkLight.debug.xcconfig */;
+			baseConfigurationReference = 367B0E394D9495A0D43C3B1B /* Pods-DarkLight.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191102;
+				CURRENT_PROJECT_VERSION = 20191106;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
@@ -417,7 +425,7 @@
 				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/Supporting Files/DarkLight-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/TouchBar/DarkLight-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
@@ -427,16 +435,16 @@
 			};
 			name = Debug;
 		};
-		9684DD07236D6C100007D930 /* Release */ = {
+		96AB1CF42373153D00A539CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DF2F88B5E9684C114808524 /* Pods-DarkLight.release.xcconfig */;
+			baseConfigurationReference = D4036EC03D1B45F288AFD22E /* Pods-DarkLight.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191102;
+				CURRENT_PROJECT_VERSION = 20191106;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
@@ -447,7 +455,7 @@
 				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/Supporting Files/DarkLight-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/TouchBar/DarkLight-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,25 +467,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9684DCF2236D6C0F0007D930 /* Build configuration list for PBXProject "DarkLight" */ = {
+		96AB1CDF2373153C00A539CA /* Build configuration list for PBXProject "DarkLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9684DD03236D6C100007D930 /* Debug */,
-				9684DD04236D6C100007D930 /* Release */,
+				96AB1CF02373153D00A539CA /* Debug */,
+				96AB1CF12373153D00A539CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9684DD05236D6C100007D930 /* Build configuration list for PBXNativeTarget "DarkLight" */ = {
+		96AB1CF22373153D00A539CA /* Build configuration list for PBXNativeTarget "DarkLight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9684DD06236D6C100007D930 /* Debug */,
-				9684DD07236D6C100007D930 /* Release */,
+				96AB1CF32373153D00A539CA /* Debug */,
+				96AB1CF42373153D00A539CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9684DCEF236D6C0F0007D930 /* Project object */;
+	rootObject = 96AB1CDC2373153C00A539CA /* Project object */;
 }

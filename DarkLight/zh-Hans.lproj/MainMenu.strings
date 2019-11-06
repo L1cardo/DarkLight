@@ -1,123 +1,123 @@
 
-/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "1Th-Pu-c0u"; */
-"1Th-Pu-c0u.title" = "快捷键:";
+/* Class = "NSButton"; ibShadowedToolTip = "Close Preferences"; ObjectID = "0mg-CJ-20a"; */
+"0mg-CJ-20a.ibShadowedToolTip" = "关闭偏好设置";
 
-/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "4Nu-su-GqA"; */
-"4Nu-su-GqA.title" = "💻 GitHub:";
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "2ka-NZ-nyV"; */
+"2ka-NZ-nyV.title" = "Copyright © 2019 Licardo. 保留所有权力.";
 
-/* Class = "NSButtonCell"; title = "Close"; ObjectID = "4SZ-dT-Vw2"; */
-"4SZ-dT-Vw2.title" = "关闭";
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "384-3F-4AI"; */
+"384-3F-4AI.title" = "偏好设置";
 
-/* Class = "NSWindow"; title = "About"; ObjectID = "56H-mq-N98"; */
-"56H-mq-N98.title" = "关于";
+/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "3bG-xq-Fye"; */
+"3bG-xq-Fye.title" = "微信";
 
-/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "7Nd-HC-YJl"; */
-"7Nd-HC-YJl.title" = "支付宝";
+/* Class = "NSWindow"; title = "About"; ObjectID = "4dc-Ws-65x"; */
+"4dc-Ws-65x.title" = "关于";
 
-/* Class = "NSButtonCell"; title = "WeChat"; ObjectID = "9bI-eY-wdb"; */
-"9bI-eY-wdb.title" = "微信";
+/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "6Fa-Lt-Vdg"; */
+"6Fa-Lt-Vdg.title" = "检查更新...";
 
-/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "AHC-ze-bDg"; */
-"AHC-ze-bDg.title" = "https://licardo.cn";
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "6dg-3J-znQ"; */
+"6dg-3J-znQ.title" = "版本:";
 
-/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "BKT-qa-0Ra"; */
-"BKT-qa-0Ra.title" = "💡 主页:";
+/* Class = "NSButtonCell"; title = "https://licardo.cn"; ObjectID = "7NJ-ID-ea5"; */
+"7NJ-ID-ea5.title" = "https://licardo.cn";
 
-/* Class = "NSMenuItem"; title = "Check for Updates..."; ObjectID = "Bri-gf-3KD"; */
-"Bri-gf-3KD.title" = "检查更新...";
+/* Class = "NSMenuItem"; title = "About DarkLight"; ObjectID = "9Hc-vl-PLN"; */
+"9Hc-vl-PLN.title" = "关于 DarkLight";
 
-/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "Cmc-dm-Lzi"; */
-"Cmc-dm-Lzi.title" = "@AlbertAbdilim";
+/* Class = "NSTextFieldCell"; title = "Dark"; ObjectID = "DkL-PR-YjK"; */
+"DkL-PR-YjK.title" = "深色";
 
-/* Class = "NSTextFieldCell"; title = "Switch between Dark and Light mode with keyboard shortcut"; ObjectID = "Dzs-Ot-lp6"; */
-"Dzs-Ot-lp6.title" = "使用键盘快捷键在 深色 与 浅色 模式之间切换";
+/* Class = "NSTextFieldCell"; title = "Quit DarkLight?"; ObjectID = "FqR-RK-s23"; */
+"FqR-RK-s23.title" = "退出 DarkLight?";
 
-/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "FZE-Xi-f5z"; */
-"FZE-Xi-f5z.title" = "登录时启动";
+/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "FvB-Mw-f9G"; */
+"FvB-Mw-f9G.title" = "💸 捐赠:";
 
-/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "Fft-DG-nWX"; */
-"Fft-DG-nWX.title" = "albert.abdilim@foxmail.com";
+/* Class = "NSButtonCell"; title = "Yes"; ObjectID = "KNv-1C-qpX"; */
+"KNv-1C-qpX.title" = "确定";
 
-/* Class = "NSTextFieldCell"; title = "Current Appearance:"; ObjectID = "G4v-qL-8s4"; */
-"G4v-qL-8s4.title" = "当前外观:";
+/* Class = "NSWindow"; title = "Alert"; ObjectID = "Oif-bq-kTa"; */
+"Oif-bq-kTa.title" = "警告";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Close Preferences"; ObjectID = "H4w-je-1RH"; */
-"H4w-je-1RH.ibShadowedToolTip" = "关闭偏好设置";
+/* Class = "NSButtonCell"; title = "albert.abdilim@foxmail.com"; ObjectID = "PIP-xK-IGs"; */
+"PIP-xK-IGs.title" = "albert.abdilim@foxmail.com";
 
-/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "KKr-Jk-nvB"; */
-"KKr-Jk-nvB.title" = "退出";
+/* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit DarkLight, and you will not be able to swich between Dark and Light mode with an ease!"; ObjectID = "QnA-AD-DNd"; */
+"QnA-AD-DNd.title" = "⚠️ 注意：这将退出 DarkLight, 您将无法在 深色 与 浅色 模式之间轻松切换!";
 
-/* Class = "NSButtonCell"; title = "Yes"; ObjectID = "LQv-jO-vkF"; */
-"LQv-jO-vkF.title" = "确定";
+/* Class = "NSTextFieldCell"; title = "DarkLight will launch at login automatically"; ObjectID = "Rzj-lv-mzc"; */
+"Rzj-lv-mzc.title" = "DarkLight 将在系统登录时时自动启动";
 
-/* Class = "NSMenuItem"; title = "Quit DarkLight"; ObjectID = "LXJ-yb-KU7"; */
-"LXJ-yb-KU7.title" = "退出 DarkLight";
+/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "VOD-7w-pwb"; */
+"VOD-7w-pwb.title" = "Paypal";
 
-/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "Llh-Gp-hNJ"; */
-"Llh-Gp-hNJ.title" = "DarkLight";
+/* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "Znv-r7-wbW"; */
+"Znv-r7-wbW.title" = "✉️ 邮箱:";
 
-/* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "MHO-zE-WOJ"; */
-"MHO-zE-WOJ.title" = "Paypal";
+/* Class = "NSMenuItem"; title = "Quit DarkLight"; ObjectID = "aVT-oU-M1Z"; */
+"aVT-oU-M1Z.title" = "退出 DarkLight";
 
-/* Class = "NSTextFieldCell"; title = "DarkLight will launch at login automatically"; ObjectID = "MTP-vf-3cJ"; */
-"MTP-vf-3cJ.title" = "DarkLight 将在系统登录时时自动启动";
+/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "fdA-Dv-TXp"; */
+"fdA-Dv-TXp.title" = "偏好设置...";
 
-/* Class = "NSTextFieldCell"; title = "Quit DarkLight?"; ObjectID = "NLL-La-Tc2"; */
-"NLL-La-Tc2.title" = "退出 DarkLight?";
+/* Class = "NSTextFieldCell"; title = "💡 HomePage:"; ObjectID = "gw3-dp-ukU"; */
+"gw3-dp-ukU.title" = "💡 主页:";
 
-/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "Pko-QZ-DO2"; */
-"Pko-QZ-DO2.title" = "版本:";
+/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "hVm-QZ-ALM"; */
+"hVm-QZ-ALM.title" = "DarkLight";
 
-/* Class = "NSMenuItem"; title = "About DarkLight"; ObjectID = "RwX-2V-jd5"; */
-"RwX-2V-jd5.title" = "关于 DarkLight";
+/* Class = "NSTextFieldCell"; title = "💻 GitHub:"; ObjectID = "jDu-NQ-QKx"; */
+"jDu-NQ-QKx.title" = "💻 GitHub:";
 
-/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "Uuu-5z-lgx"; */
-"Uuu-5z-lgx.title" = "🐦 推特:";
+/* Class = "NSTextFieldCell"; title = "🐦 Twitter:"; ObjectID = "miu-Rg-kQ8"; */
+"miu-Rg-kQ8.title" = "🐦 推特:";
 
-/* Class = "NSWindow"; title = "Preferences"; ObjectID = "WkA-ge-cCl"; */
-"WkA-ge-cCl.title" = "偏好设置";
+/* Class = "NSTextFieldCell"; title = "Current Appearance:"; ObjectID = "nUO-nt-Ous"; */
+"nUO-nt-Ous.title" = "当前外观:";
 
-/* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "cUT-BG-H70"; */
-"cUT-BG-H70.title" = "✉️ 邮箱:";
+/* Class = "NSButtonCell"; title = "@AlbertAbdilim"; ObjectID = "qK1-4c-4FY"; */
+"qK1-4c-4FY.title" = "@AlbertAbdilim";
 
-/* Class = "NSMenuItem"; title = "Preferences..."; ObjectID = "f8g-Wy-DbE"; */
-"f8g-Wy-DbE.title" = "偏好设置...";
+/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "qiW-tv-GJ1"; */
+"qiW-tv-GJ1.title" = "版本:";
 
-/* Class = "NSTextFieldCell"; title = "⚠️ Note that this will quit DarkLight, and you will not be able to swich between Dark and Light mode with an ease!"; ObjectID = "hF0-lK-5iu"; */
-"hF0-lK-5iu.title" = "⚠️ 注意：这将退出 DarkLight, 您将无法在 深色 与 浅色 模式之间轻松切换!";
+/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "r6t-zA-78q"; */
+"r6t-zA-78q.title" = "DarkLight";
 
-/* Class = "NSTextFieldCell"; title = "💸 Donate:"; ObjectID = "k1F-3A-umY"; */
-"k1F-3A-umY.title" = "💸 捐赠:";
+/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "rfR-wj-xGk"; */
+"rfR-wj-xGk.title" = "https://github.com/L1cardo";
 
-/* Class = "NSTextFieldCell"; title = "Version:"; ObjectID = "k53-1c-YNl"; */
-"k53-1c-YNl.title" = "版本:";
+/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "ruo-c4-oUk"; */
+"ruo-c4-oUk.title" = "Copyright © 2019 Licardo. 保留所有权力.";
 
-/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "kLP-Zh-qMd"; */
-"kLP-Zh-qMd.title" = "取消";
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "rxu-kg-clm"; */
+"rxu-kg-clm.title" = "取消";
 
-/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "mAW-k2-9FV"; */
-"mAW-k2-9FV.title" = "Copyright © 2019 Licardo. 保留所有权力.";
+/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "tjm-0L-Wgj"; */
+"tjm-0L-Wgj.title" = "登录时启动";
 
-/* Class = "NSWindow"; title = "Alert"; ObjectID = "mZ7-gE-CZQ"; */
-"mZ7-gE-CZQ.title" = "警告";
+/* Class = "NSButtonCell"; title = "Close"; ObjectID = "usJ-5V-YzN"; */
+"usJ-5V-YzN.title" = "关闭";
 
-/* Class = "NSTextFieldCell"; title = "Dark"; ObjectID = "oGc-7w-fMO"; */
-"oGc-7w-fMO.title" = "深色模式";
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "w1H-re-VCX"; */
+"w1H-re-VCX.title" = "版本号";
 
-/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "pez-Xd-0z4"; */
-"pez-Xd-0z4.title" = "版本号";
+/* Class = "NSButton"; ibShadowedToolTip = "Quit DarkLight"; ObjectID = "wDS-DI-lcb"; */
+"wDS-DI-lcb.ibShadowedToolTip" = "退出 DarkLight";
 
-/* Class = "NSTextFieldCell"; title = "DarkLight"; ObjectID = "ppf-jH-lfw"; */
-"ppf-jH-lfw.title" = "DarkLight";
+/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "wqU-Aa-tzx"; */
+"wqU-Aa-tzx.title" = "版本号";
 
-/* Class = "NSButtonCell"; title = "https://github.com/L1cardo"; ObjectID = "uKj-7V-N4C"; */
-"uKj-7V-N4C.title" = "https://github.com/L1cardo";
+/* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "zMD-ix-bTa"; */
+"zMD-ix-bTa.title" = "支付宝";
 
-/* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "uOD-yi-Tt4"; */
-"uOD-yi-Tt4.title" = "版本号";
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "zY2-1w-fAe"; */
+"zY2-1w-fAe.title" = "退出";
 
-/* Class = "NSTextFieldCell"; title = "Copyright © 2019 Licardo. All rights reserved."; ObjectID = "vXh-7w-wRH"; */
-"vXh-7w-wRH.title" = "Copyright © 2019 Licardo. 保留所有权力.";
+/* Class = "NSTextFieldCell"; title = "Switch between Dark and Light mode with keyboard shortcut"; ObjectID = "zmQ-3d-o7U"; */
+"zmQ-3d-o7U.title" = "使用键盘快捷键在 深色 与 浅色 模式之间切换";
 
-/* Class = "NSButton"; ibShadowedToolTip = "Quit DarkLight"; ObjectID = "zIG-iI-7sG"; */
-"zIG-iI-7sG.ibShadowedToolTip" = "退出 DarkLight";
+/* Class = "NSTextFieldCell"; title = "Shortcut:"; ObjectID = "zv1-AO-QlN"; */
+"zv1-AO-QlN.title" = "快捷键:";

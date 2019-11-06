@@ -1,9 +1,9 @@
 //
-//  TouchBar.h
-//  TouchBarTest
+//  TouchBar.m
+//  DarkLight
 //
-//  Created by Alexsander Akers on 2/13/17.
-//  Copyright © 2017 Alexsander Akers. All rights reserved.
+//  Created by Licardo on 2019/11/6.
+//  Copyright © 2019 Licardo. All rights reserved.
 //
 
 #import <AppKit/AppKit.h>
@@ -26,4 +26,3 @@ extern void DFRSystemModalShowsCloseBoxWhenFrontMost(BOOL);
 + (void)presentSystemModalFunctionBar:(NSTouchBar *)touchBar systemTrayItemIdentifier:(NSTouchBarItemIdentifier)identifier NS_DEPRECATED_MAC(10.12.2, 10.14);
 
 @end
-
