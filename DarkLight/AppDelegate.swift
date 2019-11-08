@@ -34,20 +34,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         preferencesWindowVersionNum.stringValue = version
         aboutWindowVersionNum.stringValue = version
         
-        // set image to status bar menu
-        statusBarMenuItem.button?.image = NSImage(named: "StatusBarIcon")
-        statusBarMenuItem.button?.toolTip = "Click to Switch!".localized
+        // status bar menu
+        if let button = statusBarMenuItem.button {
+            button.image = NSImage(named: "StatusBarIcon")
+            button.toolTip = "Click to Switch!".localized
+            button.action = #selector(self.statusBarClicked(sender:))
+            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+        }
         
         // shortcut
         bindShortcut()
         
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
 
-        // whether left mouse click or right mouse click on the status bar
-        if let button = statusBarMenuItem.button {
-            button.action = #selector(self.statusBarClicked(sender:))
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
-        }
+        
         
         // get current appearance, dark or light
         DistributedNotificationCenter.default().addObserver(
@@ -168,7 +168,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                                        clickCount: 1,
                                        pressure: 0)!
         NSMenu.popUpContextMenu(statusBarMenu, with: event, for: button)
-        
     }
     
     // dark light mode switch
@@ -178,8 +177,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         script!.executeAndReturnError(nil)
     }
     
-    // touch bar
-    @objc func touchBarCliced(sender: NSButton) {
+    // touch bar clicked
+    @objc func touchBarClicked(sender: NSButton) {
         darkLight()
     }
     
@@ -188,13 +187,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let dakrLightTouchBarItem = NSTouchBarItem.Identifier(rawValue: "DakrLight")
         let dakrLightCustomTouchBarItem = NSCustomTouchBarItem.init(identifier: dakrLightTouchBarItem)
-        dakrLightCustomTouchBarItem.view = NSButton(image: NSImage(named: "TouchBarIcon")!, target: self, action: #selector(self.touchBarCliced(sender:)))
+        dakrLightCustomTouchBarItem.view = NSButton(image: NSImage(named: "TouchBarIcon")!, target: self, action: #selector(self.touchBarClicked(sender:)))
         NSTouchBarItem.addSystemTrayItem(dakrLightCustomTouchBarItem)
         
         DFRElementSetControlStripPresenceForIdentifier(dakrLightTouchBarItem, true)
     }
     
-    // about panel urls
+    // about window urls
     @IBAction func didClickURL(_ sender: NSButton) {
         let url: String
         switch sender.tag {

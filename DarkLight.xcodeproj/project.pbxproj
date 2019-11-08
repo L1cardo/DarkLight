@@ -105,9 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				96AB1CE72373153C00A539CA /* AppDelegate.swift */,
+				96AB1CEB2373153D00A539CA /* MainMenu.xib */,
 				96AB1D0D23731F6700A539CA /* TouchBar */,
 				96AB1D0823731A1700A539CA /* Supporting Files */,
-				96AB1CEB2373153D00A539CA /* MainMenu.xib */,
 				96AB1D04237319A100A539CA /* Localizations */,
 			);
 			path = DarkLight;
