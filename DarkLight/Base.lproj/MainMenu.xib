@@ -70,7 +70,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hgg-Qd-sAM">
-                                <rect key="frame" x="113" y="272" width="68" height="68"/>
+                                <rect key="frame" x="113" y="262" width="68" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="J1G-Lz-seZ"/>
                                     <constraint firstAttribute="height" constant="68" id="kHT-GQ-HqW"/>
@@ -78,7 +78,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="3wW-Ts-NTR"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-54-FeU">
-                                <rect key="frame" x="105" y="241" width="90" height="23"/>
+                                <rect key="frame" x="105" y="231" width="90" height="23"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="DarkLight" id="hVm-QZ-ALM">
                                     <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -86,12 +86,12 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8RP-B4-LBV" userLabel="Version">
-                                <rect key="frame" x="95" y="219" width="111" height="14"/>
+                                <rect key="frame" x="95" y="209" width="111" height="14"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="veF-xJ-0t7">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="qiW-tv-GJ1">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -99,7 +99,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BCs-g4-sz8">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="w1H-re-VCX">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -162,7 +162,7 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-o6-LyK">
-                                <rect key="frame" x="70" y="195" width="161" height="16"/>
+                                <rect key="frame" x="70" y="185" width="161" height="16"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="md8-hk-ERj">
                                         <rect key="frame" x="-2" y="0.0" width="131" height="16"/>
@@ -195,7 +195,7 @@
                                 </customSpacing>
                             </stackView>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="30p-aG-vzu" userLabel="Preferences">
-                                <rect key="frame" x="20" y="80" width="260" height="107"/>
+                                <rect key="frame" x="20" y="70" width="260" height="107"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1bL-jI-zLg" userLabel="Launch At Login Checkbox">
                                         <rect key="frame" x="0.0" y="91" width="116" height="16"/>
@@ -235,7 +235,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Uy-m8-hG8">
                                         <rect key="frame" x="16" y="67" width="229" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="DarkLight will launch at login automatically" id="Rzj-lv-mzc">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -270,7 +270,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z0c-fi-KgT">
                                         <rect key="frame" x="16" y="0.0" width="246" height="28"/>
                                         <textFieldCell key="cell" title="Switch between Dark and Light mode with keyboard shortcut" id="zmQ-3d-o7U">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -303,7 +303,7 @@
                             <constraint firstItem="jYr-54-FeU" firstAttribute="centerX" secondItem="oWH-1K-29I" secondAttribute="centerX" id="KmE-zU-hro"/>
                             <constraint firstItem="yc1-vR-SBE" firstAttribute="centerX" secondItem="oWH-1K-29I" secondAttribute="centerX" id="Rfv-FD-pEN"/>
                             <constraint firstItem="30p-aG-vzu" firstAttribute="top" secondItem="8RP-B4-LBV" secondAttribute="bottom" constant="32" id="Yvv-bV-rxk"/>
-                            <constraint firstItem="Hgg-Qd-sAM" firstAttribute="top" secondItem="oWH-1K-29I" secondAttribute="top" constant="20" id="ZDu-bg-jNy"/>
+                            <constraint firstItem="Hgg-Qd-sAM" firstAttribute="top" secondItem="oWH-1K-29I" secondAttribute="top" constant="30" id="ZDu-bg-jNy"/>
                             <constraint firstItem="8RP-B4-LBV" firstAttribute="top" secondItem="jYr-54-FeU" secondAttribute="bottom" constant="8" id="Zcm-ju-3z3"/>
                             <constraint firstItem="30p-aG-vzu" firstAttribute="centerX" secondItem="oWH-1K-29I" secondAttribute="centerX" id="aTR-Bm-cN6"/>
                             <constraint firstItem="56j-DE-eww" firstAttribute="centerX" secondItem="oWH-1K-29I" secondAttribute="centerX" id="iU7-R6-ouw"/>
@@ -336,7 +336,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="420" height="160"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMs-mf-22R" userLabel="Alert Text">
-                                <rect key="frame" x="100" y="53" width="300" height="77"/>
+                                <rect key="frame" x="100" y="43" width="300" height="77"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dT4-zQ-fOM">
                                         <rect key="frame" x="-2" y="58" width="111" height="19"/>
@@ -407,7 +407,7 @@
                                 </customSpacing>
                             </stackView>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1c-jr-VJw" userLabel="Icon">
-                                <rect key="frame" x="20" y="62" width="68" height="68"/>
+                                <rect key="frame" x="20" y="52" width="68" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="jfE-Gg-eYk"/>
                                     <constraint firstAttribute="height" constant="68" id="zSQ-zJ-4kg"/>
@@ -421,7 +421,7 @@
                             <constraint firstAttribute="trailing" secondItem="fX1-hU-MPJ" secondAttribute="trailing" constant="20" id="WdU-Al-EOj"/>
                             <constraint firstAttribute="bottom" secondItem="fX1-hU-MPJ" secondAttribute="bottom" constant="20" id="Yvl-I7-jCH"/>
                             <constraint firstAttribute="trailing" secondItem="wMs-mf-22R" secondAttribute="trailing" constant="20" id="be9-rJ-8gE"/>
-                            <constraint firstItem="wMs-mf-22R" firstAttribute="top" secondItem="Phm-t7-lzI" secondAttribute="top" constant="30" id="bsk-8Q-5nm"/>
+                            <constraint firstItem="wMs-mf-22R" firstAttribute="top" secondItem="Phm-t7-lzI" secondAttribute="top" constant="40" id="bsk-8Q-5nm"/>
                         </constraints>
                     </visualEffectView>
                 </subviews>
@@ -447,7 +447,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="360"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uOY-lh-7Qm">
-                                <rect key="frame" x="113" y="272" width="68" height="68"/>
+                                <rect key="frame" x="113" y="262" width="68" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="FDj-Zj-bB5"/>
                                     <constraint firstAttribute="height" constant="68" id="NOg-E0-3K8"/>
@@ -455,7 +455,7 @@
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Icon" id="gqa-c1-3t7"/>
                             </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-lK-UHE">
-                                <rect key="frame" x="105" y="241" width="90" height="23"/>
+                                <rect key="frame" x="105" y="231" width="90" height="23"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="DarkLight" id="r6t-zA-78q">
                                     <font key="font" metaFont="system" size="20"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -463,12 +463,12 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="5" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lW3-gE-fq2" userLabel="Version">
-                                <rect key="frame" x="95" y="219" width="111" height="14"/>
+                                <rect key="frame" x="95" y="209" width="111" height="14"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="AE2-46-Zwh">
                                         <rect key="frame" x="-2" y="0.0" width="47" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="Version:" id="6dg-3J-znQ">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -476,7 +476,7 @@
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Jhv-zG-9Vz">
                                         <rect key="frame" x="46" y="0.0" width="67" height="14"/>
                                         <textFieldCell key="cell" lineBreakMode="clipping" title="versionNum" id="wqU-Aa-tzx">
-                                            <font key="font" metaFont="menu" size="11"/>
+                                            <font key="font" metaFont="message" size="11"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
@@ -500,7 +500,7 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="15" horizontalStackHuggingPriority="160" verticalStackHuggingPriority="160" horizontalHuggingPriority="160" verticalHuggingPriority="160" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edG-nN-ik0" userLabel="URLs">
-                                <rect key="frame" x="28" y="71" width="245" height="140"/>
+                                <rect key="frame" x="28" y="61" width="245" height="140"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGx-a9-2TW">
                                         <rect key="frame" x="0.0" y="124" width="245" height="16"/>
@@ -713,7 +713,7 @@
                             <constraint firstItem="uOY-lh-7Qm" firstAttribute="leading" secondItem="Qt5-kM-53u" secondAttribute="leading" constant="113" id="Pdg-Mq-7UQ"/>
                             <constraint firstItem="lW3-gE-fq2" firstAttribute="centerX" secondItem="Qt5-kM-53u" secondAttribute="centerX" id="R9N-eD-2FT"/>
                             <constraint firstItem="zVk-Am-YYd" firstAttribute="centerX" secondItem="Qt5-kM-53u" secondAttribute="centerX" id="WVJ-yQ-22W"/>
-                            <constraint firstItem="uOY-lh-7Qm" firstAttribute="top" secondItem="Qt5-kM-53u" secondAttribute="top" constant="20" id="f1b-It-f94"/>
+                            <constraint firstItem="uOY-lh-7Qm" firstAttribute="top" secondItem="Qt5-kM-53u" secondAttribute="top" constant="30" id="f1b-It-f94"/>
                             <constraint firstAttribute="bottom" secondItem="zVk-Am-YYd" secondAttribute="bottom" constant="20" id="hTR-Zh-T46"/>
                             <constraint firstItem="lW3-gE-fq2" firstAttribute="top" secondItem="pGp-lK-UHE" secondAttribute="bottom" constant="8" id="hbk-zp-byc"/>
                         </constraints>
