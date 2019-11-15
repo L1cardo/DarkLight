@@ -17,6 +17,10 @@
 
 ### 🏠 [Homepage](https://github.com/L1cardo/DarkLight)
 
+## Announcement
+
+DarkLight is developed by a medical student, so please kind to me!
+
 ## Screenshots
 
 ![image](Screenshots/1.png)
