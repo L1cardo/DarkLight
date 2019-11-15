@@ -14,7 +14,7 @@
 
 ## Announcement
 
-DarkLight is developed by a medical student, so please kind to me!
+DarkLight is developed by a medical student, so please be kind to me!
 
 ## Screenshots
 
