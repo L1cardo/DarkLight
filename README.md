@@ -44,8 +44,6 @@
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
-Feel free to check [issues page](https://github.com/L1cardo/DarkLight/issues).
-Welcome to pull request.
 
 ## Show your support
 
