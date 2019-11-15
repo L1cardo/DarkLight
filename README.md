@@ -30,6 +30,8 @@
 2. Right click the status bar icon to open preferences.
 3. Use a global keyboard shortcut to switch between Dark and Light mode.
 4. Support Touch Bar button to switch between Dark and Light mode.
+5. Online update.
+6. Current macOS appearance detection.
 
 ## Author
 
