@@ -6,7 +6,7 @@
             <title>0.0.1</title>
             <pubDate>周四, 07 11月 2019 00:11:02 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/DarkLight-APPcast/releases/download/0.0.2/DarkLight.dmg" sparkle:version="20191106" sparkle:shortVersionString="0.0.2" length="5648110" type="application/octet-stream" sparkle:edSignature="0mE0Tg4Fvgnbiflyc6G0W2+iqH7pt9vb5p3i5LY5/Kt6idIFvPCw8cZEb3+U+Sm9GAylrQYpnVnv1GUNVFldAw=="/>
+            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.0.2/DarkLight.dmg" sparkle:version="20191115" sparkle:shortVersionString="0.0.2" length="5648110" type="application/octet-stream" sparkle:edSignature="ixVvNuvGtwxzKwBW6400DOT8sxm3Ksltn1T8Ozp+654fYH66PgSZgandPhIbkKJ6F4t37zQTxMs/PGY2CdKmBw=="/>
         </item>
     </channel>
 </rss>
