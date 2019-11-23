@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var aboutWindow: NSWindow!
     @IBOutlet weak var alertWindow: NSWindow!
     
-    let statusBarMenuItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    let statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -35,20 +35,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         aboutWindowVersionNum.stringValue = version
         
         // status bar menu
-        if let button = statusBarMenuItem.button {
-            button.image = NSImage(named: "StatusBarIcon")
-            button.toolTip = "Click to Switch!".localized
-            button.action = #selector(self.statusBarClicked(sender:))
-            button.sendAction(on: [.leftMouseUp, .rightMouseUp])
-        }
+        displayStatusBarMenu()
         
         // shortcut
         bindShortcut()
         
         launchAtLoginCheckbox.state = LoginServiceKit.isExistLoginItems() ? .on : .off
 
-        
-        
         // get current appearance, dark or light
         DistributedNotificationCenter.default().addObserver(
             self,
@@ -65,18 +58,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
     }
 
-    // whether left mouse click or right mouse click
-    @objc func statusBarClicked(sender: NSStatusBarButton) {
-        let mouseEvent = NSApp.currentEvent!
-        if mouseEvent.type == NSEvent.EventType.leftMouseUp {
-            darkLight()
-        } else if mouseEvent.type == NSEvent.EventType.rightMouseUp {
-            displayStatusBarMenu()
-        }
-    }
-    
-
-    
     // get current appearance, dark or light
     @objc func appleInterfaceThemeChangedNotification(notification: Notification) {
         getCurrentAppearance()
@@ -153,21 +134,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     // display status menu
     func displayStatusBarMenu() {
-        guard let button = statusBarMenuItem.button else { return }
-        let x = button.frame.origin.x
-        let y = button.frame.origin.y - 5
-        let w = button.window
-        let location = button.superview!.convert(NSMakePoint(x, y), to: nil)
-        let event = NSEvent.mouseEvent(with: .leftMouseUp,
-                                       location: location,
-                                       modifierFlags: NSEvent.ModifierFlags(rawValue: 0),
-                                       timestamp: 0,
-                                       windowNumber: w!.windowNumber,
-                                       context: NSGraphicsContext.init(),
-                                       eventNumber: 0,
-                                       clickCount: 1,
-                                       pressure: 0)!
-        NSMenu.popUpContextMenu(statusBarMenu, with: event, for: button)
+        guard let button = statusBarItem.button else { return }
+        statusBarItem.button?.image = NSImage(named: "StatusBarIcon")
+        button.action = #selector(statusBarMenuClicked)
+        button.sendAction(on: [.leftMouseUp, .rightMouseUp])
+    }
+    
+    @objc func statusBarMenuClicked() {
+        let event = NSApp.currentEvent!
+        if event.type == .leftMouseUp {
+            darkLight()
+        } else if event.type == .rightMouseUp {
+            statusBarItem.menu = statusBarMenu
+            statusBarItem.button?.performClick(self)
+            statusBarItem.menu = nil
+        }
     }
     
     // dark light mode switch

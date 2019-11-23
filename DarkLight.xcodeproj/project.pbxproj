@@ -348,6 +348,7 @@
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -402,6 +403,7 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -409,12 +411,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 367B0E394D9495A0D43C3B1B /* Pods-DarkLight.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191106;
+				CURRENT_PROJECT_VERSION = 20191123;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
@@ -439,12 +442,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4036EC03D1B45F288AFD22E /* Pods-DarkLight.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191106;
+				CURRENT_PROJECT_VERSION = 20191123;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";

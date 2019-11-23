@@ -2,16 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SUEnableAutomaticChecks</key>
-	<true/>
-	<key>NSAppleEventsUsageDescription</key>
-	<string></string>
-	<key>SUPublicEDKey</key>
-	<string>w9/p1nbbkDjO3Ut5bGhkvGf1DPG6tLARalM9M8BSnqA=</string>
-	<key>SUFeedURL</key>
-	<string>https://github.com/L1cardo/DarkLight/raw/master/appcast.xml</string>
-	<key>LSUIElement</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -34,6 +24,10 @@
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string></string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Licardo. All rights reserved.</string>
 	<key>NSMainNibFile</key>
@@ -44,5 +38,11 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUFeedURL</key>
+	<string>https://github.com/L1cardo/DarkLight/raw/master/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>w9/p1nbbkDjO3Ut5bGhkvGf1DPG6tLARalM9M8BSnqA=</string>
 </dict>
 </plist>
