@@ -152,15 +152,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     // dark light mode switch
-    func darkLight() {
+    @objc func darkLight() {
         let darkLightScript = #"tell app "System Events" to tell appearance preferences to set dark mode to not dark mode"#
         let script = NSAppleScript(source: darkLightScript)
         script!.executeAndReturnError(nil)
-    }
-    
-    // touch bar clicked
-    @objc func touchBarClicked(sender: NSButton) {
-        darkLight()
     }
     
     func touchBarDarkLight() {
@@ -168,7 +163,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let dakrLightTouchBarItem = NSTouchBarItem.Identifier(rawValue: "DakrLight")
         let dakrLightCustomTouchBarItem = NSCustomTouchBarItem.init(identifier: dakrLightTouchBarItem)
-        dakrLightCustomTouchBarItem.view = NSButton(image: NSImage(named: "TouchBarIcon")!, target: self, action: #selector(self.touchBarClicked(sender:)))
+        dakrLightCustomTouchBarItem.view = NSButton(image: NSImage(named: "TouchBarIcon")!, target: self, action: #selector(darkLight))
         NSTouchBarItem.addSystemTrayItem(dakrLightCustomTouchBarItem)
         
         DFRElementSetControlStripPresenceForIdentifier(dakrLightTouchBarItem, true)
