@@ -1,5 +1,5 @@
 //
-//  TouchBar.m
+//  TouchBar.h
 //  DarkLight
 //
 //  Created by Licardo on 2019/11/6.
