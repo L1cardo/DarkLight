@@ -48,6 +48,14 @@ Contributions, issues and feature requests are welcome!
 
 Give a ⭐️ if this project helped you!
 
+## Built with
+
+[TouchBarKit](https://github.com/L1cardo/TouchBarKit) - Display anything you want on the Touch Bar right side of brightness button
+
+## You may also love my another project
+
+[ClockBar](https://github.com/L1cardo/ClockBar) - Clock, right on the Touch Bar
+
 ## 📝 License
 
 Copyright © 2019 [L1cardo](https://github.com/L1cardo).
