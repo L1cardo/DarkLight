@@ -53,6 +53,12 @@
 /* Class = "NSButtonCell"; title = "Paypal"; ObjectID = "VOD-7w-pwb"; */
 "VOD-7w-pwb.title" = "Paypal";
 
+/* Class = "NSButtonCell"; title = "Add Touch Bar Item"; ObjectID = "YYY-HB-rJ3"; */
+"YYY-HB-rJ3.title" = "添加 Touch Bar 按钮";
+
+/* Class = "NSButtonCell"; title = "Launch At Login"; ObjectID = "Yel-8o-Qvb"; */
+"Yel-8o-Qvb.title" = "登录时启动";
+
 /* Class = "NSTextFieldCell"; title = "✉️ Email:"; ObjectID = "Znv-r7-wbW"; */
 "Znv-r7-wbW.title" = "✉️ 邮箱:";
 
@@ -95,9 +101,6 @@
 /* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "rxu-kg-clm"; */
 "rxu-kg-clm.title" = "取消";
 
-/* Class = "NSTextFieldCell"; title = "Launch At Login"; ObjectID = "tjm-0L-Wgj"; */
-"tjm-0L-Wgj.title" = "登录时启动";
-
 /* Class = "NSButtonCell"; title = "Close"; ObjectID = "usJ-5V-YzN"; */
 "usJ-5V-YzN.title" = "关闭";
 
@@ -109,6 +112,9 @@
 
 /* Class = "NSTextFieldCell"; title = "versionNum"; ObjectID = "wqU-Aa-tzx"; */
 "wqU-Aa-tzx.title" = "版本号";
+
+/* Class = "NSTextFieldCell"; title = "Add a DarkLight button on the Touch Bar Quite DarkLight if you want to remove Touch Bar Item"; ObjectID = "zKw-3M-qT4"; */
+"zKw-3M-qT4.title" = "在 Touch Bar 上添加 DarkLight 按钮 \n如果要删除 Touch Bar 按钮, 请退出 DarkLight";
 
 /* Class = "NSButtonCell"; title = "Alipay"; ObjectID = "zMD-ix-bTa"; */
 "zMD-ix-bTa.title" = "支付宝";

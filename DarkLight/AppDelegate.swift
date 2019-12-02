@@ -12,15 +12,15 @@ import MASShortcut
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     
     @IBOutlet weak var statusBarMenu: NSMenu!
     @IBOutlet weak var aboutWindowVersionNum: NSTextField!
     @IBOutlet weak var preferencesWindowVersionNum: NSTextField!
     @IBOutlet weak var currentAppearance: NSTextField!
-    @IBOutlet weak var darkLightShortcut: MASShortcutView!
-    @IBOutlet weak var launchAtLoginCheckbox: NSButton!
     @IBOutlet weak var preferencesWindow: NSWindow!
+    @IBOutlet weak var launchAtLoginCheckbox: NSButton!
+    @IBOutlet weak var addTouchBarItemCheckbox: NSButton!
+    @IBOutlet weak var darkLightShortcut: MASShortcutView!
     @IBOutlet weak var aboutWindow: NSWindow!
     @IBOutlet weak var alertWindow: NSWindow!
     
@@ -50,8 +50,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             object: nil
         )
         getCurrentAppearance()
-        
-        touchBarDarkLight()
         
     }
 
@@ -89,6 +87,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             LoginServiceKit.addLoginItems()
         } else {
             LoginServiceKit.removeLoginItems()
+        }
+    }
+    
+    @IBAction func addTouchBarItemChecked(_ sender: NSButton) {
+        let isChecked = addTouchBarItemCheckbox.state == .on
+        if isChecked == true {
+            touchBarDarkLight()
+            addTouchBarItemCheckbox.isEnabled = false
         }
     }
     
@@ -194,4 +200,3 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
 }
-

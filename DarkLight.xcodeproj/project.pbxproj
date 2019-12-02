@@ -41,13 +41,13 @@
 		96AB1CEE2373153D00A539CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96AB1CEF2373153D00A539CA /* DarkLight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DarkLight.entitlements; sourceTree = "<group>"; };
 		96AB1CF92373183000A539CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/MainMenu.strings"; sourceTree = "<group>"; };
-		96AB1CFB2373184000A539CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		96AB1CFC2373187A00A539CA /* LocalizedUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUtils.swift; sourceTree = "<group>"; };
 		96AB1D012373196E00A539CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		96AB1D032373197200A539CA /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		96AB1D05237319E800A539CA /* DarkLight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DarkLight-Bridging-Header.h"; sourceTree = "<group>"; };
 		96AB1D06237319E900A539CA /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
 		96AB1D0923731B2C00A539CA /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+		96B05CE9239521F800540E9D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		D4036EC03D1B45F288AFD22E /* Pods-DarkLight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DarkLight.release.xcconfig"; path = "Target Support Files/Pods-DarkLight/Pods-DarkLight.release.xcconfig"; sourceTree = "<group>"; };
 		F24FE37AAE7D30F5F41197F8 /* Pods_DarkLight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DarkLight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -273,7 +273,7 @@
 			children = (
 				96AB1CEC2373153D00A539CA /* Base */,
 				96AB1CF92373183000A539CA /* zh-Hans */,
-				96AB1CFB2373184000A539CA /* en */,
+				96B05CE9239521F800540E9D /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -417,7 +417,7 @@
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191123;
+				CURRENT_PROJECT_VERSION = 20191202;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
@@ -425,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/TouchBar/DarkLight-Bridging-Header.h";
@@ -448,7 +448,7 @@
 				CODE_SIGN_ENTITLEMENTS = "DarkLight/Supporting Files/DarkLight.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 20191123;
+				CURRENT_PROJECT_VERSION = 20191202;
 				DEVELOPMENT_TEAM = 2U23P5CPX2;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "DarkLight/Supporting Files/Info.plist";
@@ -456,7 +456,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.licardo.DarkLight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DarkLight/TouchBar/DarkLight-Bridging-Header.h";
