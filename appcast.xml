@@ -8,5 +8,11 @@
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
             <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.0.2/DarkLight.dmg" sparkle:version="20191115" sparkle:shortVersionString="0.0.2" length="5648110" type="application/octet-stream" sparkle:edSignature="ixVvNuvGtwxzKwBW6400DOT8sxm3Ksltn1T8Ozp+654fYH66PgSZgandPhIbkKJ6F4t37zQTxMs/PGY2CdKmBw=="/>
         </item>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>周一, 02 12月 2019 18:52:49 +0800</pubDate>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.1.0/DarkLight.dmg" sparkle:version="20191202" sparkle:shortVersionString="0.1.0" length="6320820" type="application/octet-stream" sparkle:edSignature="hDcbBIuzMcyYYfKcR3OvW6a9NkWUrT6M81KNK1PM1zJUOiqpylbyTtqdNHkQEqBSJLWqWqWTeQZsyZ772QZZAg=="/>
+        </item>
     </channel>
 </rss>
