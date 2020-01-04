@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to DarkLight 👋</h1>
 
-![version](https://img.shields.io/badge/version-0.0.2-blue.svg?cacheSeconds=2592000)
+![version](https://img.shields.io/github/v/release/L1cardo/DarkLight?label=version)
 ![platform](https://img.shields.io/badge/platform-macOS>=10.14-orange)
 [![license](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/L1cardo/ClockBar/master/LICENSE)
 ![star](https://img.shields.io/github/stars/L1cardo/DarkLight?style=social)
