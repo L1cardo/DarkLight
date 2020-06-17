@@ -3,22 +3,10 @@
     <channel>
         <title>DarkLight</title>
         <item>
-            <title>0.0.1</title>
-            <pubDate>周四, 07 11月 2019 00:11:02 +0800</pubDate>
-            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.0.2/DarkLight.dmg" sparkle:version="20191115" sparkle:shortVersionString="0.0.2" length="5648110" type="application/octet-stream" sparkle:edSignature="ixVvNuvGtwxzKwBW6400DOT8sxm3Ksltn1T8Ozp+654fYH66PgSZgandPhIbkKJ6F4t37zQTxMs/PGY2CdKmBw=="/>
-        </item>
-        <item>
-            <title>0.1.0</title>
-            <pubDate>周一, 02 12月 2019 18:52:49 +0800</pubDate>
-            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.1.0/DarkLight.dmg" sparkle:version="20191202" sparkle:shortVersionString="0.1.0" length="6320820" type="application/octet-stream" sparkle:edSignature="hDcbBIuzMcyYYfKcR3OvW6a9NkWUrT6M81KNK1PM1zJUOiqpylbyTtqdNHkQEqBSJLWqWqWTeQZsyZ772QZZAg=="/>
-        </item>
-        <item>
             <title>0.1.1</title>
-            <pubDate>周三, 17 6月 2020 11:08:45 +0800</pubDate>
+            <pubDate>周三, 17 6月 2020 11:35:02 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.1.1/DarkLight.dmg" sparkle:version="20200617" sparkle:shortVersionString="0.1.1" length="5460687" type="application/octet-stream"/>
+            <enclosure url="https://github.com/L1cardo/DarkLight/raw/master/DarkLight.dmg" sparkle:version="20200617" sparkle:shortVersionString="0.1.1" length="5460605" type="application/octet-stream"/>
         </item>
     </channel>
 </rss>
