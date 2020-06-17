@@ -4,9 +4,9 @@
         <title>DarkLight</title>
         <item>
             <title>0.1.1</title>
-            <pubDate>周三, 17 6月 2020 11:35:02 +0800</pubDate>
+            <pubDate>周三, 17 6月 2020 11:41:51 +0800</pubDate>
             <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/L1cardo/DarkLight/raw/master/DarkLight.dmg" sparkle:version="20200617" sparkle:shortVersionString="0.1.1" length="5460605" type="application/octet-stream"/>
+            <enclosure url="https://github.com/L1cardo/DarkLight/releases/download/v0.1.1/DarkLight.dmg" sparkle:version="20200617" sparkle:shortVersionString="0.1.1" length="5460871" type="application/octet-stream"/>
         </item>
     </channel>
 </rss>
