@@ -1,0 +1,32 @@
+PODS:
+  - LoginServiceKit (2.2.0)
+  - MASShortcut (2.4.0)
+  - Sparkle (1.23.0)
+
+DEPENDENCIES:
+  - LoginServiceKit (from `https://github.com/Clipy/LoginServiceKit.git`)
+  - MASShortcut
+  - Sparkle
+
+SPEC REPOS:
+  trunk:
+    - MASShortcut
+    - Sparkle
+
+EXTERNAL SOURCES:
+  LoginServiceKit:
+    :git: https://github.com/Clipy/LoginServiceKit.git
+
+CHECKOUT OPTIONS:
+  LoginServiceKit:
+    :commit: 17a916dc09f1aab0f13e6edd1f77cdecee4d0ae8
+    :git: https://github.com/Clipy/LoginServiceKit.git
+
+SPEC CHECKSUMS:
+  LoginServiceKit: 3c86ce2f2bcd1e373326839d6d863d8a6a5915b4
+  MASShortcut: d9e4909e878661cc42877cc9d6efbe638273ab57
+  Sparkle: 55b1a87ba69d56913375a281546b7c82dec95bb0
+
+PODFILE CHECKSUM: a1b4cc9b352fbb9ebd0fbf8daac6dc17787251fc
+
+COCOAPODS: 1.9.1
